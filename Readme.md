@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Yevgeny Kozlov](https://up.htmlacademy.ru/adaptive/14/user/508949).
-* Наставник: `Неизвестно`.
+* Наставник: [Николой Громов] (https://htmlacademy.ru/profile/id6170).
 
 ---
 
