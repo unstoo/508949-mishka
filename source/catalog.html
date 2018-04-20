@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page_header__logo" href="/index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="«Магазин Мишка»" width="226" height="30">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть Меню</span>
+          <span class="main-nav__hamuberger-icon"></span>
+        </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="/catalog.html">
+                Каталог Товаров
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="/order.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a  class="main-nav__link  main-nav__link--search" href="/search.html">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--basket" href="/basket.html">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="catalog">
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <ul class="catalog-list">
+        <li class="catalog-list__item">
+          <article class="card-mini">
+            <a class="card-mini__link" href="/goods-bunny.html">
+              <img class="card-mini__image" src="img/goods-bunny.jpg" alt="Зайчик-попрыгайчик" width="280" height="260">
+              <h2 class="card-mini__item-title">Зайчик-попрыгайчик</h2>
+            </a>
+            <span class="card-mini__item-info">Рост 30 см: вес 200 г</span>
+            <div class="card-mini__wrapper">
+              <span class="card-mini__item-price">1200 руб.</span>
+              <button class="card-mini__button" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-list__item">
+          <article class="card-mini">
+            <a class="card-mini__link" href="/goods-bunny.html">
+              <img class="card-mini__image" src="img/goods-laundry-basket.jpg" alt="Корзинка для белья" width="280" height="260">
+              <h2 class="card-mini__item-title">Корзинка для белья</h2>
+            </a>
+            <span class="card-mini__item-info">Диаметр 15 см, высота 10 см</span>
+            <div class="card-mini__wrapper">
+              <span class="card-mini__item-price">690 руб.</span>
+              <button class="card-mini__button" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-list__item">
+          <article class="card-mini">
+              <a class="card-mini__link" href="/goods-bunny.html">
+                <img class="card-mini__image" src="img/goods-big-basket-toys.jpg" alt="Большая корзинка для игрушек" width="280" height="260">
+                <h2 class="card-mini__item-title">Большая корзинка для игрушек</h2>
+              </a>
+              <span class="card-mini__item-info">Диаметр 30см, высота 30см</span>
+              <div class="card-mini__wrapper">
+                <span class="card-mini__item-price">1500 руб.</span>
+                <button class="card-mini__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+          </article>
+        </li>
+      </ul>
+
+      <section class="promo-story">
+        <div class="promo-story__wrapper">
+          <h2 class="promo-story__title">
+            Процесс производства
+          </h2>
+        </div>
+        <div class="promo-story__video-container">
+          <img class="promo-story__video-stub" src="img/video-stub.jpg" alt="Процесс производства товаров" width="280" height="260">
+        </div>
+        <div class="promo-story__lead-text-wrapper">
+          <p>
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+        </div>
+        <button class="promo-story__button  button" type="button">
+          Сделать заказ
+        </button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+        <ul class="page-footer__social  social-list">
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--instagram" href="https://instagram.com">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--facebook" href="https://fb.com">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link-twitter" href="https://twitter.com">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <b class="copyright__lead">Разработано</b>
+          <a class="copyright__link"  href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </footer>
+
+    <form class="modal" action="https://echo.htmlacademy.ru" method="GET">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__lead-text">Выберите размер:</span>
+      <div class="selector">
+        <label class="selector__block">
+          <input class="selector__input" name="size" type="radio" value="S">
+          <span class="selector__name">S</span>
+        </label>
+        <label class="selector__block">
+          <input class="selector__input" name="size" type="radio" value="M">
+          <span class="selector__name">M</span>
+        </label>
+        <label class="selector__block">
+          <input class="selector__input" name="size" type="radio" value="L">
+          <span class="selector__name">L</span>
+        </label>
+      </div>
+      <button class="modal_button  button">Добавить</button>
+    </form>
+
+  </body>
+</html>
