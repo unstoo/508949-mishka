@@ -43,20 +43,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: none;
     background: transparent;
     width: 50%;
     height: 52px;
-
     border: 1px solid $color-border;
-
-    &--prev {
-
-    }
-
-    &--next {
-
-    }
   }
 
   &__add {
@@ -64,5 +54,3 @@
     height: 52px;
   }
 }
-
-
