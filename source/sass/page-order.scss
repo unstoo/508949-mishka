@@ -1,0 +1,25 @@
+.page-order {
+
+  &__title {
+    font-size: $font-size--h1;
+    line-height: $line-height--h1;
+    font-weight: normal;
+
+    height: 180px;
+    margin: 0;
+    background: $color-bg-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+
+    p {
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+}

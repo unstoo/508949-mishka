@@ -1,0 +1,18 @@
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #444444;
+
+  border: solid 2px #444444;
+  background: transparent;
+
+  display: inline-flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+}

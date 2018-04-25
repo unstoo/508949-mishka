@@ -2,11 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page_header__logo" href="/index.html">
+      <a class="page-header__logo" href="/index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="«Магазин Мишка»" width="226" height="30">
       </a>
       <nav class="main-nav">
@@ -39,18 +42,18 @@
       </nav>
     </header>
 
-    <main class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
+    <main class="page-catalog">
+      <h1 class="page-catalog__title">Каталог товаров</h1>
       <ul class="catalog-list">
         <li class="catalog-list__item">
           <article class="card-mini">
             <a class="card-mini__link" href="/goods-bunny.html">
-              <img class="card-mini__image" src="img/goods-bunny.jpg" alt="Зайчик-попрыгайчик" width="280" height="260">
-              <h2 class="card-mini__item-title">Зайчик-попрыгайчик</h2>
+              <img class="card-mini__image" src="/img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <h2 class="card-mini__title">Зайчик-попрыгайчик</h2>
             </a>
-            <span class="card-mini__item-info">Рост 30 см: вес 200 г</span>
             <div class="card-mini__wrapper">
-              <span class="card-mini__item-price">1200 руб.</span>
+              <div class="card-mini__info">Рост 30 см, вес 200 г</div>
+              <div class="card-mini__price">1200 руб.</div>
               <button class="card-mini__button" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
               </button>
@@ -60,12 +63,12 @@
         <li class="catalog-list__item">
           <article class="card-mini">
             <a class="card-mini__link" href="/goods-bunny.html">
-              <img class="card-mini__image" src="img/goods-laundry-basket.jpg" alt="Корзинка для белья" width="280" height="260">
-              <h2 class="card-mini__item-title">Корзинка для белья</h2>
+              <img class="card-mini__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+              <h2 class="card-mini__title">Корзинка для белья</h2>
             </a>
-            <span class="card-mini__item-info">Диаметр 15 см, высота 10 см</span>
             <div class="card-mini__wrapper">
-              <span class="card-mini__item-price">690 руб.</span>
+              <div class="card-mini__info">Диаметр 15 см, высота 10 см</div>
+              <div class="card-mini__price">690 руб.</div>
               <button class="card-mini__button" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
               </button>
@@ -75,12 +78,12 @@
         <li class="catalog-list__item">
           <article class="card-mini">
               <a class="card-mini__link" href="/goods-bunny.html">
-                <img class="card-mini__image" src="img/goods-big-basket-toys.jpg" alt="Большая корзинка для игрушек" width="280" height="260">
-                <h2 class="card-mini__item-title">Большая корзинка для игрушек</h2>
+                <img class="card-mini__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"  width="260" height="195">
+                <h2 class="card-mini__title">Большая корзинка для игрушек</h2>
               </a>
-              <span class="card-mini__item-info">Диаметр 30см, высота 30см</span>
               <div class="card-mini__wrapper">
-                <span class="card-mini__item-price">1500 руб.</span>
+                <div class="card-mini__info">Диаметр 30см, высота 30см</div>
+                <div class="card-mini__price">1500 руб.</div>
                 <button class="card-mini__button" type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </button>
@@ -96,9 +99,9 @@
           </h2>
         </div>
         <div class="promo-story__video-container">
-          <img class="promo-story__video-stub" src="img/video-stub.jpg" alt="Процесс производства товаров" width="280" height="260">
+          <img class="promo-story__video-stub" src="img/video-mobile@1x.jpg" alt="Процесс производства товаров"  width="259" height="150">
         </div>
-        <div class="promo-story__lead-text-wrapper">
+        <div class="promo-story__text-wrapper">
           <p>
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
@@ -110,30 +113,30 @@
     </main>
 
     <footer class="page-footer">
-        <ul class="page-footer__social  social-list">
-          <li class="social-list__item">
-            <a class="social-list__link  social-list__link--instagram" href="https://instagram.com">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link  social-list__link--facebook" href="https://fb.com">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link  social-list__link-twitter" href="https://twitter.com">
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-        </ul>
-        <div class="copyright">
-          <b class="copyright__lead">Разработано</b>
-          <a class="copyright__link"  href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="https://instagram.com">
+            <span class="visually-hidden">Instagram</span>
           </a>
-        </div>
-      </footer>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="https://fb.com">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link-tweeter" href="https://tweeter.com">
+            <span class="visually-hidden">Tweeter</span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <b class="copyright__lead">Разработано</b>
+        <a class="copyright__link"  href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="/img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
 
     <form class="modal" action="https://echo.htmlacademy.ru" method="GET">
       <h2 class="modal__title">Добавить в корзину</h2>
