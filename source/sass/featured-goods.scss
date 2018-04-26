@@ -38,14 +38,15 @@
 
     margin: 0;
     padding-bottom: 28px;
+    border-collapse: collapse;
   }
 
   &__details-row {
     box-sizing: border-box;
-    height: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 
+    height: 40px;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid $color-border;
   }
 
