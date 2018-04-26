@@ -1,0 +1,11 @@
+.about-us {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &__title {
+    margin: 0;
+    font-size: $font-size--h2;
+    line-height: $line-height--h2;
+    font-weight: bold;
+  }
+}

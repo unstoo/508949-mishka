@@ -1,0 +1,16 @@
+.page-header {
+  margin: 0;
+  padding-top: 25px;
+
+  &__logo {
+    display: block;
+    height: 38px;
+    width: 88px;
+    margin: 0 auto;
+  }
+
+  &__logo-image {
+    height: 38px;
+    width: 88px;
+  }
+}

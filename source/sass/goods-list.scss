@@ -1,0 +1,31 @@
+.goods-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    background-color: $color-bg-green;
+
+    &--dark {
+      background-color: $color-bg-darkgreen;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-text--light;
+    font-size: 19px;
+    line-height: 24px;
+
+    display: block;
+    height: 103px;
+    padding-top: 30px;
+    padding-right: 200px;
+    padding-left: 30px;
+
+    &:hover {
+      height: 113px;
+      padding-top: 25px;
+    }
+  }
+}

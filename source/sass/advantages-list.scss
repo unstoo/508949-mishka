@@ -1,0 +1,19 @@
+.advantages-list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    box-sizing: border-box;
+    height: 125px;
+    padding-top: 80px;
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;
+  }
+}

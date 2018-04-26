@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page_header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="«Магазин Мишка»" width="226" height="30">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="«Магазин Мишка»" width="88" height="38">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -17,7 +19,7 @@
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a  class="main-nav__link" href="/catalog.html">
-                Каталог Товаров
+                Каталог товаров
               </a>
             </li>
             <li class="main-nav__item">
@@ -40,15 +42,17 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Милые штучки ручной работы для дома</h1>
-      <img class="page-main__promo-image" src="img/page-main-promo.jpg" alt="Товары ручной работы" width="320" height="360">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Милые штуки ручной<br> работы для дома</h1>
+      </div>
+      <!-- <img class="page-main__promo-image" src="img/page-main-promo.jpg" alt="Товары ручной работы" width="320" height="360"> -->
       <ul class="goods-list">
-        <li class="good-list__item">
+        <li class="goods-list__item">
           <a class="goods-list__link"  href="/for-interior.html">
             Предметы интерьера
           </a>
         </li>
-        <li class="good-list__item">
+        <li class="goods-list__item goods-list__item--dark">
           <a class="goods-list__link"  href="/toys.html">
             Детские игрушки
           </a>
@@ -63,15 +67,21 @@
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
         </div>
-        <dl class="featured-goods__details-wrapper">
-          <dt class="featured-goods__details-label">Цвет:</dt>
-          <dd class="featured-goods__deatails-description">«Тифанни»/серый</dd>
-          <dt class="featured-goods__details-label">Диаметр:</dt>
-          <dd class="featured-goods__deatails-description">25 см</dd>
-          <dt class="featured-goods__details-label">Высота:</dt>
-          <dd class="featured-goods__deatails-description">15 см</dd>
-        </dl>
-        <img class="featured-goods__image" src="img/goods1.jpg" alt="Вязанные корзинки" width="280" height="300">
+        <table class="featured-goods__details-wrapper">
+          <tr class="featured-goods__details-row">
+            <td class="featured-goods__details-label">Цвет:</td>
+            <td class="featured-goods__details-data">«Тифанни»/серый</td>
+          </tr>
+          <tr class="featured-goods__details-row">
+            <td class="featured-goods__details-label">Высота:</td>
+            <td class="featured-goods__details-data">25 см</td>
+          </tr>
+          <tr class="featured-goods__details-row">
+            <td class="featured-goods__details-label">Диаметр:</td>
+            <td class="featured-goods__details-data">15 см</td>
+          </tr>
+        </table>
+        <img class="featured-goods__image" src="/img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
         <span class="featured-goods__price">Цена: 990 руб.</span>
         <a class="featured-goods__button button" href="">Заказать</a>
       </article>
@@ -80,36 +90,36 @@
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="advantages-list">
           <li class="advantages-list__item">
-            <span class="adavantages-list__title">
+            <span class="advantages-list__title">
               Экологически<br>
               чистые материалы
             </span>
           </li>
           <li class="advantages-list__item">
-            <span class="adavantages-list__title">
+            <span class="advantages-list__title">
               Скандинавский стиль<br>
               по российской цене
             </span>
           </li>
           <li class="advantages-list__item">
-            <span class="adavantages-list__title">
+            <span class="advantages-list__title">
               Увеличивает лайки<br>
               на фотографиях
             </span>
           </li>
           <li class="advantages-list__item">
-            <span class="adavantages-list__title">
+            <span class="advantages-list__title">
               Связано вручную с<br>
               любовью и умилением
             </span>
           </li>
           <li class="advantages-list__item">
-            <span class="adavantages-list__title">
+            <span class="advantages-list__title">
               Поддержка отечественного производителя
             </span>
           </li>
           <li class="advantages-list__item">
-            <span class="adavantages-list__title">
+            <span class="advantages-list__title">
               Поставляется в<br>
               подарочной упаковке
             </span>
@@ -128,13 +138,15 @@
           <span class="reviews__name">Анастасия Красильникова</span>
           <a class="reviews__username">@misssssiskras</a>
         </div>
-        <button class="reviews__control reviews__control--prev button" type="button">
-          <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="reviews__control reviews__control--next button" type="button">
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
-        <a class="reviews__add button" href="/add-review.html">Написать</a>
+        <div class="reviews__controls-wrapper">
+          <button class="reviews__control reviews__control--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="reviews__control reviews__control--next  " type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
+        <a class="reviews__atd button" href="/atd-review.html">Написать</a>
       </section>
 
       <section class="contacts">
@@ -154,7 +166,7 @@
           </span>
         </address>
         <div class="contacts__map-interactive">
-          <img class="contacts__map-static" src="img/google-map-static.jpg" width="320" height="380" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <img class="contacts__map-static" src="/img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </div>
         <a class="contacts__button button" href="/contact-us.html">Напишите нам</a>
       </section>
@@ -174,15 +186,15 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link-tweeter" href="https://tweeter.com">
-            <span class="visually-hidden">Tweeter</span>
+          <a class="social-list__link social-list__link-twitter" href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
       <div class="copyright">
         <b class="copyright__lead">Разработано</b>
         <a class="copyright__link"  href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy">
+          <img class="copyright__logo" src="/img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
@@ -204,7 +216,7 @@
           <span class="selector__name">L</span>
         </label>
       </div>
-      <button class="modal_button button">Добавить</button>
+      <button class="modal__button button">Добавить</button>
     </form>
 
   </body>
