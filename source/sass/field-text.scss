@@ -7,7 +7,7 @@
   &--wrapper {
     &::before {
       content: "";
-      border-bottom: 1px solid $color-text--green;
+      border-bottom: 1px solid $color-text--primary;
       flex-grow: 1;
     }
   }
@@ -18,7 +18,7 @@
     font-weight: bold;
 
     &--big {
-      color: $color-text--green;
+      color: $color-text--primary;
       font-size: 17px;
       line-height: 16px;
       font-weight: bold;

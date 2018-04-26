@@ -5,14 +5,14 @@
 
   &__block {
     border: none;
-    border-top: 1px solid $color-text--green;
+    border-top: 1px solid $color-text--primary;
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
   }
 
   &__legend {
-    color: $color-text--green;
+    color: $color-text--primary;
     font-size: 17px;
     line-height: 16px;
     font-weight: bold;

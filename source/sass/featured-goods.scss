@@ -17,7 +17,7 @@
     font-size: 17px;
     line-break: 20px;
     font-weight: normal;
-    color: $color-text--green;
+    color: $color-text--primary;
     text-transform: uppercase;
 
     padding-bottom: 30px;
@@ -27,14 +27,14 @@
     font-size: 15px;
     line-break: 24px;
     font-weight: normal;
-    color: $color-text;
+    color: $color-darkgrey;
   }
 
   &__details-wrapper {
     font-size: 15px;
     line-height: 20px;
     font-weight: normal;
-    color: $color-text;
+    color: $color-darkgrey;
 
     width: 100%;
     margin: 0;
@@ -69,7 +69,7 @@
   &__price {
     font-size: 17px;
     line-height: 24px;
-    color: $color-text;
+    color: $color-darkgrey;
     font-weight: bold;
 
     display: flex;
