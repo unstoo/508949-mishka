@@ -1,11 +1,22 @@
 .about-us {
   padding-left: 30px;
   padding-right: 30px;
+}
 
-  &__title {
-    margin: 0;
-    font-size: $font-size--h2;
-    line-height: $line-height--h2;
-    font-weight: bold;
+.about-us__title {
+  margin: 0;
+  font-size: $font-size--h2;
+  line-height: $line-height--h2;
+  font-weight: bold;
+}
+
+@media (min-width: $width-medium) {
+  .about-us {
+    padding: 0 50px;
+  }
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 }
+

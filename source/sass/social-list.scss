@@ -5,3 +5,9 @@
   height: 80px;
   border-bottom: 1px solid #e5e5e5;
 }
+
+@media (min-width: $width-medium) {
+  .social-list {
+    margin: auto auto;
+  }
+}

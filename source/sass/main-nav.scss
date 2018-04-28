@@ -1,72 +1,152 @@
 .main-nav {
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  box-sizing: border-box;
+  min-height: 80px;
+  position: relative;
+  border-bottom: 2px solid $color-border;
+}
+
+.main-nav__link {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 30px;
+  padding-left: 75px;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: bold;
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link--hover;
   }
 
-  &__item {
-    height: 80px;
-    position: relative;
-    border-bottom: 2px solid $color-border;
+  &:active {
+    color: $color-link--down;
   }
+}
 
-  &__link {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    color: $color-link;
-    text-decoration: none;
+.main-nav__toggle {
+  display: block;
+  padding: 0;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 
-    height: 100%;
-    display: block;
-    padding-top: 31px;
-    padding-left: 75px;
-    padding-bottom: 30px;
+  background: transparent;
+  border: none;
 
-    &:hover {
-      color: $color-link--hover;
-    }
-
-    &:active {
-      color: $color-link--down;
-    }
-  }
-
-  &__toggle {
-    display: block;
-    padding: 0;
-    height: 21px;
-    width: 21px;
+  &::after {
+    content: "";
     position: absolute;
-    top: 30px;
-    right: 30px;
+    bottom: 6px;
+    right: -3px;
+    display: block;
+    width: 29px;
+    height: 3px;
+    border-top: black solid 3px;
+    transform: rotate(45deg);
+  }
 
-    background: transparent;
-    border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: -3px;
+    display: block;
+    width: 29px;
+    height: 3px;
+    border-top: black solid 3px;
+    transform: rotate(-45deg);
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 6px;
-      right: -3px;
-      display: block;
-      width: 29px;
-      height: 3px;
-      border-top: black solid 3px;
-      transform: rotate(45deg);
-    }
+
+@media (min-width: $width-medium) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+
 
     &::before {
       content: "";
-      position: absolute;
-      bottom: 6px;
-      left: -3px;
-      display: block;
-      width: 29px;
-      height: 3px;
-      border-top: black solid 3px;
-      transform: rotate(-45deg);
+      width: 100%;
+      height: 1px;
+      order: 4;
+      border-bottom: solid 1px black;
+    }
+
+    &::after {
+      content: "Бесплатная доставка по Росии";
+      order: 100;
+      margin-left: auto;
+      margin-right: 50px;
+      padding: 30px 0;
+
+      font-size: $font-size;
+      line-height: $line-height;
     }
   }
+
+  .main-nav__item {
+    min-height: 88px;
+    min-width: 167px;
+    order: 99;
+
+    border: none;
+
+    &--search {
+      order: 2;
+      margin-left: auto;
+      min-width: 80px;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    &--basket {
+      order: 3;
+      width: 265px;
+      margin-right: 50px;
+    }
+
+    &--catalog {
+      padding-left: 50px;
+    }
+  }
+
+  .main-nav__link {
+    padding-left: 0px;
+
+    &--basket {
+      padding-left: 80px;
+      padding-right: 0;
+
+      font-size: $font-size + 2px;
+    }
+
+    &--search {
+      order: 2;
+      min-width: 80px;
+
+      font-size: 0;
+    }
+  }
+
 }

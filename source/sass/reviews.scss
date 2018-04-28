@@ -2,55 +2,115 @@
   margin-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
+}
 
-  &__title {
-    font-size: $font-size--h2;
-    line-height: $line-height--h2;
+.reviews__title {
+  font-size: $font-size--h2;
+  line-height: $line-height--h2;
 
-    margin: 0;
-    margin-bottom: 35px;
-  }
+  margin: 0;
+  margin-bottom: 35px;
+}
 
-  &__text {
-    font-size: 15px;
-    line-height: 30px;
-    color: #444444;
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
 
-    margin: 0;
-    margin-bottom: 65px;
-  }
+  margin: 0;
+  margin-bottom: 65px;
+}
 
-  &__name {
-    font-size: 17px;
-    line-height: 24px;
-    color: #000000;
-  }
+.reviews__name {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
 
-  &__username {
-    font-size: 17px;
-    line-height: 30px;
-    color: #444444;
-  }
+.reviews__username {
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
 
-  &__controls-wrapper {
+.reviews__controls-wrapper {
+  display: flex;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.reviews__control {
+  display: inline-flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 50%;
+  height: 52px;
+  border: 1px solid $color-border;
+}
+
+.reviews__add {
+  width: 100%;
+  height: 52px;
+}
+
+@media (min-width: $width-medium) {
+  .reviews {
+    padding: 0 50px;
+    padding-top: 80px;
+    height: 535px;
     display: flex;
-    margin-top: 38px;
-    margin-bottom: 38px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  &__control {
-    display: inline-flex;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background: transparent;
+  .reviews__title {
+    order: 1;
+    margin-right: auto;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__add {
+    order: 2;
+    width: 175px;
+  }
+
+  .reviews__text-wrapper {
+    order: 3;
+    padding-top: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__names-wrapper {
+    order: 4;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    height: 52px;
-    border: 1px solid $color-border;
   }
 
-  &__add {
-    width: 100%;
-    height: 52px;
+  .reviews__name {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
   }
+
+  .reviews__username {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+
+  .reviews__controls-wrapper {
+    order: 5;
+    width: 50%;
+    margin: 0;
+  }
+
 }

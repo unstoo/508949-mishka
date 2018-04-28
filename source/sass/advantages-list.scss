@@ -3,17 +3,31 @@
   margin-bottom: 50px;
   padding: 0;
   list-style: none;
+}
 
-  &__item {
-    box-sizing: border-box;
-    height: 125px;
-    padding-top: 80px;
+.advantages-list__item {
+  box-sizing: border-box;
+  height: 125px;
+  padding-top: 80px;
+}
+
+.advantages-list__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+@media (min-width: $width-medium) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &__title {
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
-    color: #000000;
+  .advantages-list__item {
+    width: 50%;
+    padding: 0;
+    padding-top: 100px;
   }
 }
