@@ -1,8 +1,7 @@
-
-
-  .footer-logo {
-    width: 105px;
-    margin-right: 85px;
+.footer-logo {
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 
 @media (min-width: $width-medium) {

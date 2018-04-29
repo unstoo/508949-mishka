@@ -11,3 +11,16 @@
   min-height: 375px;
   margin-top: 30px;
 }
+
+@media (min-width: $width-medium) {
+  .catalog-list {
+    margin: 0 50px;
+    margin-top: 80px;
+  }
+
+  .catalog-list__item {
+    min-height: 335px;
+    margin: 0;
+    margin-bottom: 55px;
+  }
+}
