@@ -1,7 +1,3 @@
-.main-nav {
-
-}
-
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -90,11 +86,11 @@
       width: 100%;
       height: 1px;
       order: 4;
-      border-bottom: solid 1px black;
+      border-bottom: solid 1px $color-border;
     }
 
     &::after {
-      content: "Бесплатная доставка по Росии";
+      content: "Бесплатная доставка по России";
       order: 100;
       margin-left: auto;
       margin-right: 50px;
@@ -116,8 +112,8 @@
       order: 2;
       margin-left: auto;
       min-width: 80px;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+      border-left: solid 1px $color-border;
+      border-right: solid 1px $color-border;
     }
 
     &--basket {
@@ -148,5 +144,8 @@
       font-size: 0;
     }
   }
+}
+
+@media (min-width: $width-large) {
 
 }

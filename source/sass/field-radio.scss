@@ -1,19 +1,24 @@
 .field-radio {
+  box-sizing: border-box;
   display: flex;
   height: 40px;
   align-items: center;
+}
 
-  &__name {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
+.field-radio__name {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
 
-    padding-left: 60px;
-  }
+  padding-left: 60px;
+}
 
-  &__input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
+.field-radio__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+@media (min-width: $width-medium) {
+
 }
