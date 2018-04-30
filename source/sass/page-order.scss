@@ -41,3 +41,22 @@
     }
   }
 }
+
+@media (min-width: $width-large) {
+  .page-order__title {
+    height: 240px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-order__text-wrapper {
+    margin: 0 225px;
+    padding-top: 70px;
+
+    p {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}

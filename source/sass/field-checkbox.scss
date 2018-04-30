@@ -24,3 +24,15 @@
     display: inline-flex;
   }
 }
+
+@media (min-width: $width-large) {
+  .field-checkbox {
+    width: 32%;
+    display: inline-flex;
+  }
+
+  .field-checkbox__name {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

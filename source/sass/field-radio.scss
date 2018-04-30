@@ -19,6 +19,9 @@
   opacity: 0;
 }
 
-@media (min-width: $width-medium) {
-
+@media (min-width: $width-large) {
+  .field-checkbox__name {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

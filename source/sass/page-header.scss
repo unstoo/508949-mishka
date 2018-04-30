@@ -26,3 +26,12 @@
     top: 25px;
   }
 }
+
+@media (min-width: $width-large) {
+
+  .page-header__logo {
+    position: absolute;
+    left: calc(50% - 44px);
+    top: 25px;
+  }
+}

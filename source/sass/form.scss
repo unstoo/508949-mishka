@@ -43,6 +43,7 @@
   .form__block {
 
     border: none;
+    width: 100%;
 
     &--grey {
       background-color: #f1f1f1;
@@ -50,6 +51,7 @@
   }
 
   .form__group {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -83,5 +85,27 @@
       width: 230px;
       margin-left: 50px;
       margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .form__legend {
+    width: 175px;
+
+    text-align: center;
+  }
+
+  .form__inputs-group {
+    box-sizing: border-box;
+    padding-right: 175px;
+    width: calc(100% - 175px);
+  }
+
+  .form__info-text {
+    margin-right: 225px;
+  }
+
+  .form__button {
+    margin-left: 225px;
   }
 }
