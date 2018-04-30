@@ -102,3 +102,43 @@
     margin: 55px auto;
   }
 }
+
+@media (min-width: $width-large) {
+  .contacts {
+    min-height: 465px;
+    margin: 0 100px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__map-interactive {
+    width: 525px;
+    height: 465px;
+    position: absolute;
+    right: 0;
+  }
+
+  .contacts__map-static {
+    width: 525px;
+    height: 465px;
+  }
+
+  .contacts__title {
+    padding-left: 175px;
+  }
+  .contacts__wrapper {
+    padding-left: 175px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts__wrapper-group {
+    padding-bottom: 30px;
+  }
+  .contacts__button {
+    margin: 0;
+    margin-top: auto;
+    margin-left: 175px;
+  }
+}

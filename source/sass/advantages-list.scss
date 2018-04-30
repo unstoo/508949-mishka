@@ -22,7 +22,8 @@
 @media (min-width: $width-medium) {
   .advantages-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 85px;
   }
 
   .advantages-list__item {

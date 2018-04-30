@@ -38,6 +38,10 @@
     background-color: #f9f9f9;
   }
 
+  .goods-list__item {
+    width: 50%;
+  }
+
   .goods-list__link {
     height: 120px;
     padding-top: 35px;
@@ -47,4 +51,21 @@
     font-weight: bold;
   }
 
+}
+
+@media (min-width: $width-large) {
+  .goods-list {
+    padding: 0 100px;
+    margin-bottom: 75px;
+  }
+
+  .goods-list__link {
+    box-sizing: border-box;
+    padding-right: calc(100% - 175px)
+  }
+
+  .goods-list__item {
+    width: 50%;
+    flex-grow: 0;
+  }
 }

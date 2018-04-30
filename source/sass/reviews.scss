@@ -114,3 +114,28 @@
   }
 
 }
+
+@media (min-width: $width-large) {
+  .reviews {
+    margin: 0 100px;
+    padding-left: 175px;
+    padding-right: 0;
+    outline: 1px solid coral;
+  }
+
+  .reviews__title {
+    margin-bottom: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__text-wrapper {
+    padding-top: 0;
+    padding-right: 100px;
+  }
+
+  .reviews__controls-wrapper {
+    width: 175px;
+  }
+}

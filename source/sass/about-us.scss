@@ -20,3 +20,13 @@
   }
 }
 
+@media (min-width: $width-large) {
+  .about-us {
+    padding: 0 275px;
+  }
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
