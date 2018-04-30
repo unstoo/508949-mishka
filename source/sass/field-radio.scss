@@ -6,8 +6,8 @@
 }
 
 .field-radio__name {
-  font-size: 17px;
-  line-height: 18px;
+  font-size: $font-size + 2px;
+  line-height: $line-height - 6px;
   font-weight: bold;
 
   padding-left: 60px;
@@ -21,7 +21,7 @@
 
 @media (min-width: $width-large) {
   .field-checkbox__name {
-    font-size: 19px;
-    line-height: 18px;
+    font-size: $font-size--bigger + 2px;
+    line-height: $line-height--bigger - 12px;
   }
 }

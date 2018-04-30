@@ -13,17 +13,16 @@
   }
 }
 .goods-list__link {
-  text-decoration: none;
-  color: $color-text--light;
-  font-size: 19px;
-  line-height: 24px;
-
-  box-sizing: border-box;
   display: block;
   height: 103px;
   padding-top: 30px;
   padding-right: 200px;
   padding-left: 30px;
+
+  font-size: $font-size + 4px;
+  line-height: $line-height;
+  color: #ffffff;
+  text-decoration: none;
 
   &:hover {
     height: 113px;
@@ -46,8 +45,8 @@
     height: 120px;
     padding-top: 35px;
 
-    font-size: 20px;
-    line-height: 30px;
+    font-size: $font-size--bigger + 3px;
+    line-height: $line-height--bigger;
     font-weight: bold;
   }
 

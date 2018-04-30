@@ -6,15 +6,14 @@
 }
 
 .advantages-list__item {
-  box-sizing: border-box;
   height: 125px;
   padding-top: 80px;
 
 }
 
 .advantages-list__title {
-  font-size: 17px;
-  line-height: 20px;
+  font-size: $font-size--bigger;
+  line-height: $line-height--bigger - 10px;
   font-weight: bold;
   color: #000000;
 }

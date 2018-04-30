@@ -13,24 +13,24 @@
 }
 
 .reviews__text {
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
+  font-size: $font-size;
+  line-height: $line-height + 6px;
+  color:$color-darkgrey;
 
   margin: 0;
   margin-bottom: 65px;
 }
 
 .reviews__name {
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $font-size + 2px;
+  line-height: $line-height;
   color: #000000;
 }
 
 .reviews__username {
-  font-size: 17px;
-  line-height: 30px;
-  color: #444444;
+  font-size: $font-size + 2px;
+  line-height: $line-height + 6px;
+  color: $color-darkgrey;
 }
 
 .reviews__controls-wrapper {
@@ -69,8 +69,8 @@
     order: 1;
     margin-right: auto;
 
-    font-size: 43px;
-    line-height: 50px;
+    font-size: $font-size--medium-h1;
+    line-height:  $line-height--medium-h1;
   }
 
   .reviews__add {
@@ -84,8 +84,8 @@
   }
 
   .reviews__text {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: $font-size--bigger;
+    line-height: $line-height--bigger;
   }
 
   .reviews__names-wrapper {
@@ -96,14 +96,14 @@
   }
 
   .reviews__name {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: $font-size--bigger;
+    line-height: $line-height--bigger;
     font-weight: bold;
   }
 
   .reviews__username {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: $font-size--bigger;
+    line-height: $line-height--bigger;
   }
 
 
@@ -125,8 +125,8 @@
   .reviews__title {
     margin-bottom: 0;
 
-    font-size: 53px;
-    line-height: 57px;
+    font-size: $font-size--large-h1;
+    line-height:  $line-height--large-h1;
   }
 
   .reviews__text-wrapper {

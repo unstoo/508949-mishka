@@ -15,8 +15,8 @@
 }
 
 .card-mini__title {
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $font-size + 2px;
+  line-height:  $line-height;
   color: #000000;
 
   margin: 0;
@@ -24,18 +24,19 @@
 }
 
 .card-mini__wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
   display: flex;
   flex-wrap: wrap;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .card-mini__info {
-  font-size: 13px;
-  line-height: 30px;
-  color: #444444;
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
+
+  font-size: $font-size--bigger;
+  line-height:  $line-height--bigger;
+  color: $color-darkgrey;
 
   &::after {
     content: "";
@@ -54,13 +55,13 @@
 }
 
 .card-mini__price {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
-
   display: inline-block;
-  margin-right: auto;
   padding-bottom: 20px;
+  margin-right: auto;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: bold;
 }
 
 .card-mini__button {
@@ -111,8 +112,8 @@
   .card-mini__info {
     margin: 0;
 
-    font-size: 15px;
-    line-height: 30px;
+    font-size: $font-size;
+    line-height: $line-height + 6px;
 
     &::after {
       margin: 0;
@@ -123,14 +124,14 @@
 
   .card-mini__group {
     margin-top: auto;
+    padding-top: 20px;
 
     border-top: 1px solid $color-border;
-    padding-top: 20px;
   }
 
   .card-mini__price {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: $font-size + 2px;
+    line-height: $line-height;
   }
 }
 
@@ -158,8 +159,8 @@
   }
 
   .card-mini__title {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: $font-size--bigger + 3px;
+    line-height: $line-height--bigger - 6px;
 
   }
 }

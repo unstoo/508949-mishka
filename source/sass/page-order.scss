@@ -16,8 +16,8 @@
   margin-right: 30px;
 
   p {
-    font-size: 13px;
-    line-height: 24px;
+    font-size: $font-size - 2px;
+    line-height: $line-height;
   }
 }
 
@@ -26,8 +26,8 @@
     margin-top: -88px;
     height: 220px;
 
-    font-size: 43px;
-    line-height: 50px;
+    font-size: $font-size--medium-h1;
+    line-height:  $line-height--medium-h1;
     font-weight: bold;
   }
 
@@ -36,8 +36,8 @@
     padding-top: 70px;
 
     p {
-      font-size: 17px;
-      line-height: 30px;
+      font-size: $font-size--bigger;
+      line-height: $line-height--bigger;
     }
   }
 }
@@ -46,17 +46,11 @@
   .page-order__title {
     height: 240px;
 
-    font-size: 53px;
-    line-height: 57px;
+    font-size: $font-size--large-h1;
+    line-height:  $line-height--large-h1;
   }
 
   .page-order__text-wrapper {
     margin: 0 225px;
-    padding-top: 70px;
-
-    p {
-      font-size: 17px;
-      line-height: 30px;
-    }
   }
 }

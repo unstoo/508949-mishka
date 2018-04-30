@@ -7,8 +7,8 @@
 }
 
 .copyright__lead {
-  font-size: 19px;
-  line-height: 18px;
+  font-size: $font-size + 4px;
+  line-height: $line-height - 6px;
 
   margin-right: 30px;
 }

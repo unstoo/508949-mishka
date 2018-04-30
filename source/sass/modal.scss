@@ -23,11 +23,12 @@
 }
 
 .modal__lead-text {
-  font-size: 15px;
-  line-height: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  font-size: $font-size;
+  line-height: $line-height + 6px;
 }
 
 @media (min-width: $width-medium) {
@@ -38,15 +39,15 @@
     padding-top: 35px;
     padding-bottom: 45px;
 
-    border: 1px solid grey;
+    border: 1px solid $color-border;
   }
 
   .modal__title {
     width: 100%;
     margin-top: 0;
 
-    font-size: 30px;
-    line-height: 57px;
+    font-size: $font-size--large-h1 - 23px;
+    line-height: $line-height--large-h1;
     text-transform: uppercase;
     text-align: center;
   }
@@ -55,8 +56,8 @@
     width: 100%;
     margin-bottom: 0;
 
-    font-size: 17px;
-    line-height: 30px;
+    font-size: $font-size--bigger;
+    line-height: $line-height--bigger;
     text-align: center;
   }
 
@@ -68,6 +69,6 @@
 
     border: none;
     background-color: $color-bg-green;
-    color: $color-text--light;
+    color: #ffffff;
   }
 }

@@ -15,8 +15,8 @@
     padding: 0 50px;
   }
   .about-us__title {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: $font-size--medium-h1;
+    line-height:  $line-height--medium-h1;
   }
 }
 
@@ -25,8 +25,8 @@
     padding: 0 275px;
   }
   .about-us__title {
-    font-size: 53px;
-    line-height: 57px;
+    font-size: $font-size--large-h1;
+    line-height:  $line-height--large-h1;
   }
 }
 

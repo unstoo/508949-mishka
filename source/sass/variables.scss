@@ -2,23 +2,14 @@ $color-link: #000000;
 $color-link--hover: #666666;
 $color-link--down: #b2b2b2;
 
-$color-icon: #d3d2d2;
-$color-icon--hover: #63d1bb;
-$color-icon--down: #d3f2ec;
-
 $color-bg-green: #63d1bb;
 $color-bg-darkgreen: #56c3b2;
 $color-bg-grey: #f1f1f1;
 
 $color-darkgrey: #444444;
-$color-text--header: #010000;
-$color-text--light: #ffffff;
 $color-text--primary: #63d1bb;
 
 $color-border: #ececec;
-$color-border--footer: #e5e5e5;
-$color-border--button: #444444;
-$color-border--green: #62d1ba;
 
 $width-medium: 768px;
 $width-large: 1200px;
@@ -27,8 +18,15 @@ $font-family: "Open Sans", sans-serif;
 
 $font-size: 15px;
 $line-height: 24px;
+$font-size--bigger: 17px;
+$line-height--bigger: 30px;
 
 $font-size--h1: 27px;
 $line-height--h1: 30px;
+$font-size--medium-h1: 43px;
+$line-height--medium-h1: 50px;
+$font-size--large-h1: 53px;
+$line-height--large-h1: 57px;
+
 $font-size--h2: 25px;
 $line-height--h2: 30px;
