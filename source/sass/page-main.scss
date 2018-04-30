@@ -24,6 +24,12 @@
 
 
 @media (min-width: $width-large) {
+  .page-main__wrapper {
+    height: 630px;
+    margin-top: -88px;
+    padding-top: 160px;
+  }
+
   .page-main__title {
     font-size: 53px;
     line-height: 57px;

@@ -9,6 +9,7 @@
   box-sizing: border-box;
   height: 125px;
   padding-top: 80px;
+
 }
 
 .advantages-list__title {
@@ -22,13 +23,37 @@
 @media (min-width: $width-medium) {
   .advantages-list {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 85px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
   }
 
   .advantages-list__item {
     width: 50%;
     padding: 0;
     padding-top: 100px;
+
+    &--eco {
+      order: 0;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--local {
+      order: 3;
+    }
+
+    &--wrapped {
+      order: 5;
+    }
   }
 }

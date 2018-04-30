@@ -166,7 +166,7 @@
     flex-wrap: wrap;
     min-height: 636px;
     margin: 0 100px;
-    padding-bottom: 85px;
+    margin-bottom: 85px;
   }
 
   .featured-goods__label {
@@ -181,6 +181,7 @@
 
   .featured-goods__title {
     order: 2;
+    padding-top: 0;
 
     font-size: 53px;
     line-height: 57px;
@@ -204,6 +205,7 @@
   .featured-goods__button {
     order: 5;
     margin-left: 175px;
+    margin-top: auto;
   }
 
   .featured-goods__image {
