@@ -133,3 +133,33 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $width-large) {
+  .card-mini {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-bottom: none;
+  }
+
+  .card-mini__wrapper {
+    flex-basis: 100%;
+    min-height: 200px;
+
+    border: 1px solid $color-border;
+  }
+
+  .card-mini__link {
+    width: 100%;
+
+    &--image {
+      height: 462px;
+    }
+  }
+
+  .card-mini__title {
+    font-size: 20px;
+    line-height: 24px;
+
+  }
+}

@@ -19,5 +19,15 @@
 
     font-size: 43px;
     line-height: 50px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $width-large) {
+  .page-catalog__title {
+    height: 240px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

@@ -24,3 +24,14 @@
     margin-bottom: 55px;
   }
 }
+
+@media (min-width: $width-large) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .catalog-list__item {
+    width: 317px;
+  }
+}
