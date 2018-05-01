@@ -1,72 +1,225 @@
-.main-nav {
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  &__item {
-    height: 80px;
-    position: relative;
-    border-bottom: 2px solid $color-border;
-  }
+.main-nav__item {
+  min-height: 80px;
+  position: relative;
 
-  &__link {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    color: $color-link;
-    text-decoration: none;
+  border-bottom: 2px solid $color-border;
 
-    height: 100%;
-    display: block;
-    padding-top: 31px;
-    padding-left: 75px;
-    padding-bottom: 30px;
-
-    &:hover {
-      color: $color-link--hover;
-    }
-
-    &:active {
-      color: $color-link--down;
-    }
-  }
-
-  &__toggle {
-    display: block;
-    padding: 0;
-    height: 21px;
-    width: 21px;
+  &--desktop-item {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    z-index: -1;
+    height: 0;
+    width: 0;
+    opacity: 0;
+   }
+}
 
-    background: transparent;
-    border: none;
+.main-nav__link {
+  display: block;
+  height: 100%;
+  padding: 30px;
+  padding-left: 75px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 6px;
-      right: -3px;
-      display: block;
-      width: 29px;
-      height: 3px;
-      border-top: black solid 3px;
-      transform: rotate(45deg);
-    }
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: bold;
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link--hover;
+  }
+
+  &:active {
+    color: $color-link--down;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  padding: 0;
+  height: 21px;
+  width: 21px;
+
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  background: transparent;
+  border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    right: -3px;
+    display: block;
+    width: 29px;
+    height: 3px;
+    border-top: black solid 3px;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: -3px;
+    display: block;
+    width: 29px;
+    height: 3px;
+    border-top: black solid 3px;
+    transform: rotate(-45deg);
+  }
+}
+
+
+@media (min-width: $width-medium) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+
 
     &::before {
       content: "";
-      position: absolute;
-      bottom: 6px;
-      left: -3px;
-      display: block;
-      width: 29px;
-      height: 3px;
-      border-top: black solid 3px;
-      transform: rotate(-45deg);
+      width: 100%;
+      height: 1px;
+      order: 4;
+      border-bottom: solid 1px $color-border;
+    }
+
+    &::after {
+      content: "Бесплатная доставка по России";
+      order: 100;
+      margin-left: auto;
+      margin-right: 50px;
+      padding: 30px 0;
+
+      font-size: $font-size;
+      line-height: $line-height;
+    }
+  }
+
+  .main-nav__item {
+    min-height: 88px;
+    min-width: 167px;
+    order: 99;
+
+    border: none;
+
+    &--search {
+      order: 2;
+      margin-left: auto;
+      min-width: 80px;
+
+      border-left: solid 1px $color-border;
+      border-right: solid 1px $color-border;
+    }
+
+    &--basket {
+      order: 3;
+      width: 265px;
+      margin-right: 50px;
+    }
+
+    &--catalog {
+      padding-left: 50px;
+    }
+  }
+
+  .main-nav__link {
+    padding-left: 0px;
+
+    &--basket {
+      padding-left: 80px;
+      padding-right: 0;
+
+      font-size: $font-size + 2px;
+    }
+
+    &--search {
+      min-width: 80px;
+
+      font-size: 0;
+    }
+  }
+}
+
+@media (min-width: $width-large) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      order: 2;
+    }
+  }
+
+  .main-nav__item {
+    min-height: 88px;
+    min-width: 215px;
+    order: 0;
+
+    border: none;
+
+    &--search {
+      display: flex;
+      width: 31%;
+      margin-left: auto;
+    }
+
+    &--basket {
+      width: 315px;
+      margin-right: 0;
+      padding-right: 50px;
+    }
+
+    &--catalog {
+      margin-left: 50px;
+      padding: 0;
+    }
+
+    &--desktop-item {
+      position: relative;
+      z-index: 0;
+      height: auto;
+      width: auto;
+      opacity: 1;
+
+      order: 3;
+
+      &:nth-last-child(2) {
+        margin-left: 50px;
+        padding: 0;
+      }
+    }
+  }
+
+  .main-nav__link {
+    padding: 30px 0;
+    min-width: 175px;
+
+    font-size: $font-size--bigger;
+    line-height: $line-height--bigger - 6px;
+
+    &--basket {
+      padding-left: 80px;
+    }
+
+    &--search {
+      font-size: 0;
+      min-width: 88px;
+      margin-left: auto;
+      outline: 1px red solid;
     }
   }
 }

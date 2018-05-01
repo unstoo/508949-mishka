@@ -2,17 +2,24 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
 
-  &__input {
-    display: none;
-  }
+.selector__input {
+  display: none;
+}
 
-  &__block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #ececec;
-    width: 30%;
-    height: 52px;
+.selector__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ececec;
+  width: 30%;
+  height: 52px;
+}
+
+@media (min-width: $width-medium) {
+  .selector {
+    width: 350px;
+    margin: 0 auto;
   }
 }

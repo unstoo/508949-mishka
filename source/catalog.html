@@ -7,37 +7,48 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <header class="page-header">
-      <a class="page-header__logo" href="/index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="«Магазин Мишка»" width="226" height="30">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="«Магазин Мишка»" width="88" height="38">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть Меню</span>
           <span class="main-nav__hamuberger-icon"></span>
         </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a  class="main-nav__link" href="/catalog.html">
-                Каталог Товаров
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a  class="main-nav__link" href="/order.html">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a  class="main-nav__link  main-nav__link--search" href="/search.html">
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link  main-nav__link--basket" href="/basket.html">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item   main-nav__item--catalog">
+            <a  class="main-nav__link" href="/catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a  class="main-nav__link" href="/order.html">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="main-nav__item  main-nav__item--search">
+            <a  class="main-nav__link  main-nav__link--search" href="/search.html">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__item  main-nav__item--basket">
+            <a class="main-nav__link  main-nav__link--basket" href="/basket.html">
+              Корзина: пока пуста
+            </a>
+          </li>
+          <li class="main-nav__item   main-nav__item--desktop-item">
+            <a  class="main-nav__link" href="/catalog.html">
+              Новые поступления
+            </a>
+          </li>
+          <li class="main-nav__item   main-nav__item--desktop-item">
+            <a  class="main-nav__link" href="/catalog.html">
+              Распродажа
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -46,46 +57,58 @@
       <ul class="catalog-list">
         <li class="catalog-list__item">
           <article class="card-mini">
-            <a class="card-mini__link" href="/goods-bunny.html">
+            <a class="card-mini__link  card-mini__link--image" href="/goods-bunny.html">
               <img class="card-mini__image" src="/img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
-              <h2 class="card-mini__title">Зайчик-попрыгайчик</h2>
             </a>
             <div class="card-mini__wrapper">
-              <div class="card-mini__info">Рост 30 см, вес 200 г</div>
-              <div class="card-mini__price">1200 руб.</div>
-              <button class="card-mini__button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="catalog-list__item">
-          <article class="card-mini">
-            <a class="card-mini__link" href="/goods-bunny.html">
-              <img class="card-mini__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
-              <h2 class="card-mini__title">Корзинка для белья</h2>
-            </a>
-            <div class="card-mini__wrapper">
-              <div class="card-mini__info">Диаметр 15 см, высота 10 см</div>
-              <div class="card-mini__price">690 руб.</div>
-              <button class="card-mini__button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="catalog-list__item">
-          <article class="card-mini">
-              <a class="card-mini__link" href="/goods-bunny.html">
-                <img class="card-mini__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"  width="260" height="195">
-                <h2 class="card-mini__title">Большая корзинка для игрушек</h2>
+              <a class="card-mini__link  card-mini__link--title" href="/goods-bunny.html">
+                <h2 class="card-mini__title">Зайчик-попрыгайчик</h2>
               </a>
-              <div class="card-mini__wrapper">
-                <div class="card-mini__info">Диаметр 30см, высота 30см</div>
-                <div class="card-mini__price">1500 руб.</div>
+              <div class="card-mini__info">Рост 30 см, вес 200 г</div>
+              <div class="card-mini__group">
+                <div class="card-mini__price">1200 руб.</div>
                 <button class="card-mini__button" type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-list__item">
+          <article class="card-mini">
+            <a class="card-mini__link   card-mini__link--image" href="/goods-bunny.html">
+              <img class="card-mini__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+            </a>
+            <div class="card-mini__wrapper">
+              <a class="card-mini__link  card-mini__link--title" href="/goods-bunny.html">
+                <h2 class="card-mini__title">Корзинка для белья</h2>
+              </a>
+              <div class="card-mini__info">Диаметр 15 см, высота 10 см</div>
+              <div class="card-mini__group">
+                <div class="card-mini__price">690 руб.</div>
+                <button class="card-mini__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-list__item">
+          <article class="card-mini">
+              <a class="card-mini__link card-mini__link--image" href="/goods-bunny.html">
+                <img class="card-mini__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"  width="260" height="195">
+              </a>
+              <div class="card-mini__wrapper">
+                <a class="card-mini__link card-mini__link--title" href="/goods-bunny.html">
+                  <h2 class="card-mini__title">Большая корзинка для игрушек</h2>
+                </a>
+                <div class="card-mini__info">Диаметр 30см, высота 30см</div>
+                <div class="card-mini__group">
+                  <div class="card-mini__price">1500 руб.</div>
+                  <button class="card-mini__button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </button>
+                </div>
               </div>
           </article>
         </li>
@@ -104,27 +127,29 @@
           <p>
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
+
+          <button class="promo-story__button  button" type="button">
+              Сделать заказ
+            </button>
         </div>
-        <button class="promo-story__button  button" type="button">
-          Сделать заказ
-        </button>
       </section>
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social-list">
+      <img class="footer-logo" src="img/logo-mobile.svg" alt="«Магазин Мишка»">
+      <ul class="social-list  page-footer__social">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="https://instagram.com">
+          <a class="social-list__link  social-list__link--instagram" href="https://instagram.com">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="https://fb.com">
+          <a class="social-list__link  social-list__link--facebook" href="https://fb.com">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link-twitter" href="https://twitter.com">
+          <a class="social-list__link  social-list__link-twitter" href="https://twitter.com">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>

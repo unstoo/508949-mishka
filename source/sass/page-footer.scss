@@ -4,3 +4,16 @@
   position: relative;
   background-color: $color-bg-grey;
 }
+
+@media (min-width: $width-medium) {
+  .page-footer {
+    display: flex;
+    min-height: 145px;
+    padding: 0 50px;
+  }
+
+  .page-footer__social {
+    min-width: 175px;
+  }
+}
+

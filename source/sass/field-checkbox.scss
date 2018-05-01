@@ -2,18 +2,37 @@
   display: flex;
   height: 40px;
   align-items: center;
+}
 
-  &__name {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
+.field-checkbox__name {
+  font-size: $font-size + 2;
+  line-height: $line-height - 6;
+  font-weight: bold;
 
-    padding-left: 60px;
+  padding-left: 60px;
+}
+
+.field-checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+@media (min-width: $width-medium) {
+  .field-checkbox {
+    width: 49%;
+    display: inline-flex;
+  }
+}
+
+@media (min-width: $width-large) {
+  .field-checkbox {
+    width: 32%;
+    display: inline-flex;
   }
 
-  &__input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+  .field-checkbox__name {
+    font-size: $font-size--bigger + 2px;
+    line-height: $line-height--bigger - 12px;
   }
 }

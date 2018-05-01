@@ -1,16 +1,37 @@
 .page-header {
   margin: 0;
   padding-top: 25px;
+}
 
-  &__logo {
-    display: block;
-    height: 38px;
-    width: 88px;
-    margin: 0 auto;
+.page-header__logo {
+  display: block;
+  height: 38px;
+  width: 88px;
+  margin: 0 auto;
+}
+
+.page-header__logo-image {
+  height: 38px;
+  width: 88px;
+}
+
+@media (min-width: $width-medium) {
+  .page-header {
+    padding-top: 0px;
   }
 
-  &__logo-image {
-    height: 38px;
-    width: 88px;
+  .page-header__logo {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+  }
+}
+
+@media (min-width: $width-large) {
+
+  .page-header__logo {
+    position: absolute;
+    left: calc(50% - 44px);
+    top: 25px;
   }
 }
