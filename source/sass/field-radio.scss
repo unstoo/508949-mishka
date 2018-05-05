@@ -1,5 +1,5 @@
 .field-radio {
-  box-sizing: border-box;
+  
   display: flex;
   height: 40px;
   align-items: center;
@@ -19,7 +19,7 @@
   opacity: 0;
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .field-checkbox__name {
     font-size: $font-size--bigger + 2px;
     line-height: $line-height--bigger - 12px;

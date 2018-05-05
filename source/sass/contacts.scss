@@ -54,7 +54,7 @@
   margin-right: 30px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .contacts {
     display: flex;
     flex-wrap: wrap;
@@ -98,13 +98,13 @@
   }
 
   .contacts__button {
-    box-sizing: border-box;
+    
     width: 230px;
     margin: 55px auto;
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .contacts {
     min-height: 465px;
     margin: 0 100px;

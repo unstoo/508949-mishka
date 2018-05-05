@@ -3,7 +3,7 @@
   line-height: $line-height--h1;
   font-weight: normal;
 
-  height: 180px;
+  max-height: 180px;
   margin: 0;
   background: $color-bg-grey;
   display: flex;
@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .page-order__title {
     margin-top: -88px;
     height: 220px;
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .page-order__title {
     height: 240px;
 

@@ -69,7 +69,7 @@
 .featured-goods__price {
   display: flex;
   width: 100%;
-  height: 75px;
+  min-height: 75px;
   justify-content: center;
   align-items: center;
 
@@ -84,7 +84,7 @@
   width: 260px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .featured-goods {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +158,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .featured-goods {
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +209,6 @@
     height: 636px;
     width: 525px;
     position: absolute;
-    float: right;
     top: 0;
     z-index: -1;
   }

@@ -41,7 +41,7 @@
 
 .reviews__control {
   display: inline-flex;
-  box-sizing: border-box;
+  
   margin: 0;
   padding: 0;
   background: transparent;
@@ -55,7 +55,7 @@
   height: 52px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .reviews {
     padding: 0 50px;
     padding-top: 80px;
@@ -115,7 +115,7 @@
 
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .reviews {
     margin: 0 100px;
     padding-left: 175px;

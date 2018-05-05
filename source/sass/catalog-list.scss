@@ -12,7 +12,7 @@
   margin-top: 30px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .catalog-list {
     margin: 0 50px;
     margin-top: 80px;
@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .catalog-list {
     display: flex;
     flex-wrap: wrap;

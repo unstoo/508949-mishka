@@ -18,14 +18,14 @@
   opacity: 0;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .field-checkbox {
     width: 49%;
     display: inline-flex;
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .field-checkbox {
     width: 32%;
     display: inline-flex;

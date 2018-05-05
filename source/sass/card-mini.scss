@@ -69,7 +69,7 @@
   width: 22px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .card-mini {
     min-height: 335px;
     display: flex;
@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .card-mini {
     display: flex;
     flex-wrap: wrap;

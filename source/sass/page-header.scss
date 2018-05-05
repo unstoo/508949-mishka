@@ -15,7 +15,7 @@
   width: 88px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .page-header {
     padding-top: 0px;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
 
   .page-header__logo {
     position: absolute;

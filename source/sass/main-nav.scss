@@ -79,7 +79,7 @@
 }
 
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .main-nav__toggle {
     display: none;
   }
@@ -154,7 +154,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;

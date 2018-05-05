@@ -1,5 +1,5 @@
 .modal {
-  box-sizing: border-box;
+  
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -14,7 +14,7 @@
   font-size: $font-size--h1;
   line-height: $line-height--h1;
 
-  box-sizing: border-box;
+  
   margin: 0;
   margin-top: 40px;
   width: 260px;
@@ -31,7 +31,7 @@
   line-height: $line-height + 6px;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .modal {
     height: 336px;
     width: 566px;

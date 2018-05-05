@@ -5,7 +5,13 @@
   background-color: $color-bg-grey;
 }
 
-@media (min-width: $width-medium) {
+.page-footer__logo {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+@media (min-width: $screen-medium) {
   .page-footer {
     display: flex;
     min-height: 145px;
@@ -15,5 +21,9 @@
   .page-footer__social {
     min-width: 175px;
   }
-}
 
+  .page-footer__logo {
+    width: 105px;
+    margin-right: 85px;
+  }
+}

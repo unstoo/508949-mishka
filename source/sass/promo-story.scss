@@ -37,7 +37,7 @@
   font-weight: normal;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .promo-story {
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
 
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .promo-story {
     display: block;
     min-height: 455px;

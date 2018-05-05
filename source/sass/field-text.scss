@@ -18,7 +18,7 @@
   line-height: $line-height - 6px;
   font-weight: bold;
 
-  box-sizing: border-box;
+  
 
   &--big {
     order: -1;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .field-text {
     flex-wrap: nowrap;
     align-items: baseline;
@@ -88,7 +88,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .field-text {
     &--wrapper {
       margin-right: 175px;

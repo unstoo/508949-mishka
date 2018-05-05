@@ -5,7 +5,7 @@
 }
 
 .goods-list__item {
-  box-sizing: border-box;
+  
   background-color: $color-bg-green;
 
   &--dark {
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .goods-list {
     display: flex;
     padding: 0 50px;
@@ -52,14 +52,14 @@
 
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .goods-list {
     padding: 0 100px;
     margin-bottom: 75px;
   }
 
   .goods-list__link {
-    box-sizing: border-box;
+    
     padding-right: calc(100% - 175px)
   }
 

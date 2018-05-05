@@ -33,7 +33,7 @@
   color: $color-darkgrey;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .form {
     margin: 0;
     display: flex;
@@ -87,7 +87,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .form__legend {
     width: 175px;
 

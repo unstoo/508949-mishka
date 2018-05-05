@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-@media (min-width: $width-medium) {
+@media (min-width: $screen-medium) {
   .about-us {
     padding: 0 50px;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: $width-large) {
+@media (min-width: $screen-large) {
   .about-us {
     padding: 0 275px;
   }
