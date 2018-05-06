@@ -1,19 +1,20 @@
 .page-order__title {
-  font-size: $font-size--h1;
-  line-height: $line-height--h1;
-  font-weight: normal;
-
-  max-height: 180px;
+  min-height: 180px;
   margin: 0;
-  background: $color-bg-grey;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: $color-bg-grey;
+  font-size: $font-size--h1;
+  line-height: $line-height--h1;
+  font-weight: bold;
 }
 
 .page-order__text-wrapper {
   margin-left: 30px;
   margin-right: 30px;
+  padding-top: 4px;
+  margin-bottom: 24px;
 
   p {
     font-size: $font-size - 2px;
@@ -24,7 +25,7 @@
 @media (min-width: $screen-medium) {
   .page-order__title {
     margin-top: -88px;
-    height: 220px;
+    min-height: 220px;
 
     font-size: $font-size--medium-h1;
     line-height:  $line-height--medium-h1;
@@ -44,7 +45,7 @@
 
 @media (min-width: $screen-large) {
   .page-order__title {
-    height: 240px;
+    min-height: 240px;
 
     font-size: $font-size--large-h1;
     line-height:  $line-height--large-h1;

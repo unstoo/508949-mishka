@@ -1,15 +1,60 @@
 .field-checkbox {
   display: flex;
-  height: 40px;
+  height: 50px;
   align-items: center;
 }
 
 .field-checkbox__name {
+  position: relative;
+  padding-left: 60px;
   font-size: $font-size + 2;
   line-height: $line-height - 6;
   font-weight: bold;
 
-  padding-left: 60px;
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    height: 39px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border: 2px solid black;
+  }
+}
+
+.field-checkbox:hover .field-checkbox__name {
+  &::before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.field-checkbox:active .field-checkbox__name {
+  &::before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.field-checkbox input[type='checkbox']:active + .field-checkbox__name {
+  &::before {
+    border: solid 2px #c7c7c7;
+  }
+}
+
+.field-checkbox input[type='checkbox']:checked + .field-checkbox__name {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -3px;
+    height: 22px;
+    width: 32px;
+    background-size: 10px 10px;
+    background:
+      no-repeat
+      url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2232px%22%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cpath%20id%3D%22mail%22%20fill%3D%22%23cccccc%22%20d%3D%22M28%2C5H4C1.791%2C5%2C0%2C6.792%2C0%2C9v13c0%2C2.209%2C1.791%2C4%2C4%2C4h24c2.209%2C0%2C4-1.791%2C4-4V9%20C32%2C6.792%2C30.209%2C5%2C28%2C5z%20M2%2C10.25l6.999%2C5.25L2%2C20.75V10.25z%20M30%2C22c0%2C1.104-0.898%2C2-2%2C2H4c-1.103%2C0-2-0.896-2-2l7.832-5.875%20l4.368%2C3.277c0.533%2C0.397%2C1.166%2C0.6%2C1.8%2C0.6c0.633%2C0%2C1.266-0.201%2C1.799-0.6l4.369-3.277L30%2C22L30%2C22z%20M30%2C20.75l-7-5.25l7-5.25%20V20.75z%20M17.199%2C18.602c-0.35%2C0.263-0.763%2C0.4-1.199%2C0.4s-0.851-0.139-1.2-0.4L10.665%2C15.5l-0.833-0.625L2%2C9.001V9%20c0-1.103%2C0.897-2%2C2-2h24c1.102%2C0%2C2%2C0.897%2C2%2C2L17.199%2C18.602z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  }
 }
 
 .field-checkbox__input {
