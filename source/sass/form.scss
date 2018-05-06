@@ -62,6 +62,15 @@
     flex-wrap: wrap;
   }
 
+  .form__radio {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .form__checkbox {
+    margin-bottom: 27px;
+  }
+
   .form__block {
     width: 100%;
     border: none;
@@ -71,15 +80,24 @@
     }
   }
 
+  .form__name-input {
+    margin-top: 5px;
+  }
+
   .form__group {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    padding: 45px 50px;
+    padding: 25px 50px;
     width: 100%;
 
     &--grey {
+      margin-bottom: 15px;
       background-color: $color-bg-grey;
+    }
+
+    &--last {
+      padding-top: 45px;
     }
   }
 
@@ -104,6 +122,7 @@
 
   .form__info-text {
     order: 5;
+    margin-top: 10px;
     margin-right: 50px;
     margin-left: auto;
     font-size: $font-size--bigger;
@@ -123,9 +142,19 @@
     text-align: center;
   }
 
+  .form__group {
+    &--last {
+      margin-bottom: 20px;
+    }
+  }
+
   .form__inputs-group {
     padding-right: 175px;
     width: calc(100% - 175px);
+
+    &--checkboxes {
+      padding-right: 80px;
+    }
   }
 
   .form__info-text {

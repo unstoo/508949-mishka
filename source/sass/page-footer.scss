@@ -25,7 +25,11 @@
   }
 
   .page-footer__logo {
-    width: 105px;
+    width: 100px;
+    height: 130px;
     margin-right: 85px;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
   }
 }

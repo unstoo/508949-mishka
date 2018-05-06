@@ -169,7 +169,7 @@
       order: 100;
       margin-left: auto;
       margin-right: 50px;
-      padding: 30px 0;
+      padding: 15px 0;
 
       font-size: $font-size;
       line-height: $line-height;
@@ -187,35 +187,36 @@
       order: 2;
       margin-left: auto;
       min-width: 80px;
-
       border-left: solid 1px $color-border;
       border-right: solid 1px $color-border;
     }
 
     &--basket {
       order: 3;
-      width: 265px;
+      width: 250px;
       margin-right: 50px;
+      padding-top: 15px;
     }
 
     &--catalog {
       padding-left: 50px;
+      padding-right: 10px;
     }
   }
 
   .main-nav__link {
     padding-left: 0px;
+    padding-top: 15px;
+    font-size: $font-size;
 
     &--basket {
       padding-left: 80px;
       padding-right: 0;
-
       font-size: $font-size + 2px;
     }
 
     &--search {
       min-width: 80px;
-
       font-size: 0;
     }
   }
@@ -233,36 +234,44 @@
 
   .main-nav__item {
     min-height: 88px;
-    min-width: 215px;
+    min-width: 185px;
+    padding-left: 30px;
     order: 0;
-
     border: none;
 
     &--search {
       display: flex;
       width: 31%;
       margin-left: auto;
+
+      &::before {
+        left: auto;
+        right: 33px;
+        top: 33px;
+      }
     }
 
     &--basket {
       width: 315px;
       margin-right: 0;
+      padding:0 ;
       padding-right: 50px;
+      padding-top: 0;
     }
 
     &--catalog {
       margin-left: 50px;
       padding: 0;
+      border-right: solid 1px $color-border;
     }
 
     &--desktop-item {
+      order: 3;
       position: relative;
       z-index: 0;
       height: auto;
       width: auto;
       opacity: 1;
-
-      order: 3;
 
       &:nth-last-child(2) {
         margin-left: 50px;
@@ -286,7 +295,13 @@
       font-size: 0;
       min-width: 88px;
       margin-left: auto;
-      outline: 1px red solid;
+      border-left: solid 1px $color-border;
+      border-right: solid 1px $color-border;
+    }
+
+    &--desktop {
+      padding-top: 15px;
+      font-size: $font-size;
     }
   }
 }

@@ -25,10 +25,17 @@
 
   .page-header__logo {
     position: absolute;
+    width: auto;
     left: 50px;
     top: 25px;
     box-shadow: none;
-    width: 88px;
+  }
+
+  .page-header__logo-image {
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0;
   }
 }
 
@@ -36,7 +43,7 @@
 
   .page-header__logo {
     position: absolute;
-    left: calc(50% - 44px);
-    top: 25px;
+    left: calc(50% - 75px);
+    top: 10px;
   }
 }

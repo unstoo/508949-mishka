@@ -54,6 +54,36 @@
   }
 }
 
+@media (min-width: $screen-medium) {
+  .field-radio {
+    height: 65px;
+  }
+
+  .field-radio__name {
+    padding-left: 80px;
+    padding-top: 5px;
+    font-size: $font-size + 4px;
+
+    &::before {
+      height: 48px;
+      width: 48px;
+    }
+  }
+
+  .field-radio input[type='radio']:checked + .field-radio__name {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 17px;
+      top: 8px;
+      height: 18px;
+      width: 18px;
+      background: #62d1ba;
+      border-radius: 50%;
+    }
+  }
+}
+
 @media (min-width: $screen-large) {
   .field-checkbox__name {
     font-size: $font-size--bigger + 2px;

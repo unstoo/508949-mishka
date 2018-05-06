@@ -112,20 +112,63 @@
     &--wrapper {
       margin: 0;
       width: 100%;
+
+      &::before {
+        content: "";
+        border: none;
+        flex-grow: 0;
+        height: 0;
+        width: 0;
+        z-index: -1;
+      }
     }
   }
+
+
 
   .field-text__name {
     width: 165px;
     flex-shrink: 0;
+    font-size: $font-size + 4px;
 
     &--big {
       padding-right: 0;
+    }
+
+    &--shrinks {
+      width: auto;
+      padding-right: 30px;
     }
   }
 
   .field-text__input {
     background-color: transparent;
+    padding-left: 15px;
+    font-size: $font-size + 4px;
+
+    &--phone,
+    &--phone:hover,
+    &--email,
+    &--email:hover {
+      background-position-x: 95%; 
+    }
+
+    &--phone {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    &::placeholder {
+      font-size: $font-size + 4px;
+    }
+  }
+
+  .field-text__textarea {
+    font-size: $font-size + 4px;
+
+    &::placeholder {
+      font-size: $font-size + 4px;
+    }
   }
 }
 
@@ -143,12 +186,20 @@
 
     &--big {
       padding-left: 60px;
+      margin-right: 10px;
       font-size: $font-size--bigger;
       line-height: $line-height--bigger - 14px;
     }
   }
 
   .field-text__input {
+    &--phone,
+    &--phone:hover,
+    &--email,
+    &--email:hover {
+      background-position-x: 99%; 
+    }
+
     &::placeholder {
       font-size: $font-size--bigger + 1px;
       line-height: $line-height--bigger - 11px;
