@@ -14,16 +14,19 @@
   .about-us {
     padding: 0 50px;
   }
+
   .about-us__title {
     font-size: $font-size--medium-h1;
     line-height:  $line-height--medium-h1;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: $screen-large) {
   .about-us {
-    padding: 0 275px;
+    padding: 0 225px;
   }
+
   .about-us__title {
     font-size: $font-size--large-h1;
     line-height:  $line-height--large-h1;

@@ -1,14 +1,19 @@
 .featured-goods {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  padding-bottom: 40px;
   padding-left: 30px;
   padding-right: 30px;
+  border-bottom: 1px solid $color-border;
+  border-image-source: url(/img/bg-zigzag-line.svg);
+  border-image-slice: 90;
+  border-image-width: 0 0 6px 0;
+  border-image-repeat: repeat;
 }
 
 .featured-goods__title {
   margin: 0;
   padding: 0;
   padding-top: 30px;
-
   font-size: $font-size + 10px;
   line-height: $line-height + 6px;
   font-weight: normal;
@@ -16,7 +21,6 @@
 
 .featured-goods__label {
   padding-bottom: 30px;
-
   font-size: $font-size + 2px;
   line-height: $line-height - 4px;
   font-weight: normal;
@@ -25,6 +29,7 @@
 }
 
 .featured-goods__text-wrapper {
+  margin-bottom: 20px;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: normal;
@@ -34,9 +39,8 @@
 .featured-goods__details-wrapper {
   width: 100%;
   margin: 0;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
   border-collapse: collapse;
-
   font-size: $font-size;
   line-height: $line-height - 4px;
   font-weight: normal;
@@ -69,10 +73,9 @@
 .featured-goods__price {
   display: flex;
   width: 100%;
-  min-height: 75px;
+  min-height: 70px;
   justify-content: center;
   align-items: center;
-
   font-size: $font-size + 2px;
   line-height: $line-height;
   color: $color-darkgrey;
@@ -89,28 +92,30 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin: 0 50px;
-    margin-bottom: 65px;
-    padding: 0;
+    padding: 0 50px;
+    padding-bottom: 65px;
+    margin-bottom: 52px;
+    border-image-slice: 60;
+    border-image-width: 0 0 15px 0;
+    border-image-repeat: repeat;
   }
 
   .featured-goods__title {
     margin: 0;
     padding: 0;
     padding-top: 30px;
-
-    font-size: $font-size--medium-h1;
-    line-height:  $line-height--medium-h1;
+    font-size: $font-size--large-h1 - 10px;
+    line-height:  $line-height--large-h1 - 6px;
     font-weight: bold;
   }
 
   .featured-goods__label {
     padding: 0;
-    padding-right: 20px;
+    padding-right: 25px;
+    padding-bottom: 10px;
     margin-left: auto;
     margin-top: auto;
     width: 100px;
-
     font-size: $font-size + 2;
     line-height: $line-height - 7;
     font-weight: bold;
@@ -119,6 +124,7 @@
 
   .featured-goods__text-wrapper {
     width: 290px;
+    margin-top: 30px;
     margin-right: 300px;
     margin-bottom: 20px;
   }
@@ -131,17 +137,16 @@
     height: 405px;
     width: 335px;
     position: absolute;
-    right: 0;
-    top: 100px;
+    right: 50px;
+    top: 135px;
   }
 
   .featured-goods__price {
     width: 290px;
     margin-right: 300px;
-    margin-top: 55px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
     height: auto;
-
     font-size: $font-size--bigger + 3px;
   }
 
@@ -162,47 +167,57 @@
   .featured-goods {
     display: flex;
     flex-wrap: wrap;
-    min-height: 636px;
-    margin: 0 100px;
-    margin-bottom: 85px;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 100px;
+    margin: 0 50px;
+    margin-bottom: 57px;
+    border-image-slice: 80;
+    border-image-width: 0 0 25px 0;
+    border-image-repeat: repeat;
   }
 
   .featured-goods__label {
     order: 1;
     display: flex;
     align-items: center;
-    width: 175px;
+    width: 170px;
     margin: 0;
     padding: 0 40px;
+    padding-bottom: 10px;
   }
 
   .featured-goods__title {
     order: 2;
     padding-top: 0;
-
     font-size: $font-size--large-h1;
     line-height:  $line-height--large-h1;
+    margin-bottom: 25px;
   }
 
   .featured-goods__text-wrapper {
     order: 5;
     margin-left: 175px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .featured-goods__details-wrapper {
     order: 5;
     margin-left: 175px;
+    margin-bottom: 65px;
   }
 
   .featured-goods__price {
     order: 5;
     margin-left: 175px;
+    margin-bottom: 30px;
+    align-items: flex-end;
   }
 
   .featured-goods__button {
     order: 5;
     margin-left: 175px;
-    margin-top: auto;
   }
 
   .featured-goods__image {
@@ -210,6 +225,7 @@
     width: 525px;
     position: absolute;
     top: 0;
+    right: 0;
     z-index: -1;
   }
 }

@@ -16,6 +16,14 @@
   width: 88px;
   display: block;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $screen-medium) {
