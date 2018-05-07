@@ -7,7 +7,6 @@
 .main-nav__item {
   min-height: 79px;
   position: relative;
-
   box-shadow:
     0px 1px 0px 0px rgba(236, 236, 236, 1);
 
@@ -18,8 +17,6 @@
     width: 0;
     opacity: 0;
    }
-
-
 }
 
 .main-nav__item--search,
@@ -155,7 +152,6 @@
     display: flex;
     flex-wrap: wrap;
 
-
     &::before {
       content: "";
       width: 100%;
@@ -193,7 +189,7 @@
 
     &--basket {
       order: 3;
-      width: 250px;
+      width: 265px;
       margin-right: 50px;
       padding-top: 15px;
     }

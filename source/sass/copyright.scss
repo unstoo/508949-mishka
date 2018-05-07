@@ -1,6 +1,9 @@
 .copyright {
   height: 80px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright__link {
@@ -9,6 +12,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
   &:active {
     opacity: 0.3;
   }
@@ -20,6 +24,8 @@
 
 .copyright__lead {
   margin-right: 25px;
+  padding-right: 5px;
+  padding-bottom: 10px;
   font-size: $font-size + 4px;
   line-height: $line-height - 6px;
   color: #000000;

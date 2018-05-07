@@ -15,13 +15,17 @@
 @media (min-width: $screen-medium) {
   .catalog-list {
     margin: 0 50px;
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   .catalog-list__item {
     min-height: 335px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
+
+    &--last {
+      margin-bottom: 45px;
+    }
   }
 }
 
@@ -30,8 +34,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 110px;
+    margin-bottom: 55px;
   }
+  
   .catalog-list__item {
     width: 317px;
+      margin: 0;
+
+    &--last {
+      margin: 0;
+    }
   }
 }
