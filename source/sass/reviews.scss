@@ -84,7 +84,7 @@
     padding: 0 50px;
     padding-top: 80px;
     margin-bottom: 70px;
-    height: 535px;
+    min-height: 535px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -94,6 +94,14 @@
     border-image-width: 0 0 15px 0;
     border-image-slice: 30;
     border-image-repeat: stretch;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .reviews {
+      background-image: url("/img/review@2x.jpg");
+      background-position: left 0%;
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -155,9 +163,9 @@
     padding-top: 75px;
     padding-bottom: 190px;
     margin-bottom: 70px;
+    border-image-slice: 85;
     border-image-width: 0 0 25px 0;
-    border-image-slice: 30;
-    border-image-repeat: stretch;
+    border-image-repeat: repeat;
   }
 
   .reviews__title {

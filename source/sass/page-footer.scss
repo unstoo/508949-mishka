@@ -1,4 +1,6 @@
 .page-footer {
+  max-width: 1150px;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
@@ -25,11 +27,20 @@
   }
 
   .page-footer__logo {
+    position: relative;
     width: 100px;
     height: 130px;
     margin-right: 85px;
     opacity: 1;
     z-index: 1;
-    position: relative;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 }
