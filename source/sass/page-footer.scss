@@ -1,6 +1,4 @@
 .page-footer {
-  max-width: 1150px;
-  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
@@ -17,9 +15,13 @@
 
 @media (min-width: $screen-medium) {
   .page-footer {
-    display: flex;
     min-height: 145px;
     padding: 0 50px;
+  }
+
+  .page-footer__wrapper {
+
+    display: flex;
   }
 
   .page-footer__social {
@@ -42,5 +44,12 @@
       fill: #46c1ae;
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $screen-large) {
+  .page-footer {
+    padding-left: calc((100% - 1050px) /2);
+    padding-right: calc((100% - 1050px) /2);
   }
 }

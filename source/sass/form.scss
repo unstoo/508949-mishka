@@ -143,6 +143,9 @@
   }
 
   .form__group {
+    padding-left: calc((100% - 1050px) /2);
+    padding-right: calc((100% - 1050px) /2);
+
     &--last {
       margin-bottom: 20px;
     }

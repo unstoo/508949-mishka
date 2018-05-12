@@ -38,10 +38,11 @@
   color: #000000;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $color-inputs-green;
 }
 
 .contacts__map-interactive {
+  position: relative;
   height: 455px;
   margin-bottom: 41px;
 }
@@ -78,7 +79,7 @@
       top: -20px;
       height: 98px;
       width: 52px;
-      background-image: url("img/icon-flag.svg");
+      background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2246.68px%22%20height%3D%2281.691px%22%20viewBox%3D%22-11.34%20-28.346%2046.68%2081.691%22%20enable-background%3D%22new%20-11.34%20-28.346%2046.68%2081.691%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cg%20id%3D%22miu%22%3E%0A%20%20%20%20%3Cg%20id%3D%22Artboard-1%22%20transform%3D%22translate(-755.000000%2C%20-443.000000)%22%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22slice%22%20transform%3D%22translate(215.000000%2C%20119.000000)%22%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22editor-flag-triangle-notification-glyph%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2363D1BB%22%20d%3D%22M751.439%2C418.545v38.9l38.9-19.451L751.439%2C418.545z%20M743.66%2C496.346v-81.691h3.805v81.691H743.66z%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Crect%20x%3D%22-11.34%22%20y%3D%22-28.346%22%20fill%3D%22%23231F20%22%20width%3D%223.805%22%20height%3D%2281.691%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
       background-repeat: no-repeat;
     }
   }
@@ -122,6 +123,8 @@
   .contacts {
     margin: 0 50px;
     margin-bottom: 105px;
+    margin-left: calc((100% - 1050px) /2);
+    margin-left: calc((100% - 1050px) /2);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -130,7 +133,8 @@
   .contacts__map-interactive {
     width: 525px;
     height: 455px;
-    position: absolute;
+    /* Google maps вставляет style='position: relative'. Не знаю, как иначе победить. */
+    position: absolute !important;
     right: 0;
   }
 

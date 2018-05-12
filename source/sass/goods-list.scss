@@ -111,7 +111,10 @@
 
 @media (min-width: $screen-large) {
   .goods-list {
-    padding: 0 50px;
+
+    padding: 0;
+    padding-left: calc((100% - 1050px) /2);
+    padding-right: calc((100% - 1050px) /2);
     margin-bottom: 75px;
   }
 

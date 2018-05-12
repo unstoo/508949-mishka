@@ -12,7 +12,7 @@
 
 .field-radio:hover .field-radio__name {
   &::before {
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-inputs-green;
   }
 }
 
@@ -49,7 +49,7 @@
     top: 3px;
     height: 14px;
     width: 14px;
-    background: #62d1ba;
+    background: $color-inputs-green;
     border-radius: 50%;
   }
 }
@@ -78,7 +78,7 @@
       top: 8px;
       height: 18px;
       width: 18px;
-      background: #62d1ba;
+      background: $color-inputs-green;
       border-radius: 50%;
     }
   }

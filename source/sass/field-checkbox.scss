@@ -25,13 +25,13 @@
 
 .field-checkbox:hover .field-checkbox__name {
   &::before {
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-inputs-green;
   }
 }
 
 .field-checkbox:active .field-checkbox__name {
   &::before {
-    border: 1px solid #62d1ba;
+    border: 1px solid $color-inputs-green;
   }
 }
 
