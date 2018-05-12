@@ -4,7 +4,7 @@
   padding-right: 30px;
   margin-bottom: 35px;
   border-bottom: 1px solid $color-border;
-  border-image-source: url("../img/bg-zigzag-line.svg");
+  border-image-source: url("/img/bg-zigzag-line.svg");
   border-image-slice: 90;
   border-image-width: 0 0 6px 0;
   border-image-repeat: repeat;
@@ -56,14 +56,14 @@
   &--prev {
     background: 
       no-repeat
-      url("../img/icon-left-arrow.svg");
+      url("/img/icon-left-arrow.svg");
     background-position: 48% 45%;
   }
 
   &--next {
     background: 
       no-repeat
-      url("../img/icon-right-arrow.svg");
+      url("/img/icon-right-arrow.svg");
     background-position: 48% 45%;
   }
 
@@ -91,7 +91,7 @@
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-between;
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
     border-image-width: 0 0 15px 0;
     border-image-slice: 30;
@@ -100,7 +100,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .reviews {
-      background-image: url("../img/review@2x.jpg");
+      background-image: url("/img/review@2x.jpg");
       background-position: left 0%;
       background-size: 350px auto;
     }
