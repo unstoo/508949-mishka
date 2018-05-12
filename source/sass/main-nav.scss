@@ -222,6 +222,10 @@
 }
 
 @media (min-width: $screen-large) {
+  .main-nav {
+    padding-left: calc((100% - 1050px) /2);
+    padding-right: calc((100% - 1050px) /2);
+  }
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -232,6 +236,10 @@
       right: 0;
       top: 88px;
       position: absolute;
+    }
+
+    &::after {
+      margin-right: 0;
     }
   }
 
@@ -244,20 +252,17 @@
 
     &--search {
       display: flex;
-      width: 12%;
+      width: 24%;
       margin-left: auto;
     }
 
     &--basket {
-      width: 315px;
+      width: 265px;
       margin-right: 0;
-      padding:0 ;
-      padding-right: 50px;
-      padding-top: 0;
+      padding: 0;
     }
 
     &--catalog {
-      margin-left: 50px;
       padding: 0;
       border-right: solid 1px $color-border;
     }
@@ -271,7 +276,6 @@
       opacity: 1;
 
       &:nth-last-child(2) {
-        margin-left: 50px;
         padding: 0;
       }
     }

@@ -53,6 +53,10 @@
 }
 
 @media (min-width: $screen-large) {
+  .page-order {
+    width: 100%;
+  }
+
   .page-order__title {
     min-height: 270px;
     padding-bottom: 40px;
@@ -65,7 +69,7 @@
 
   .page-order__text-wrapper {
     margin: 0;
-    margin-left: calc((100% - 1150px + 225px) /2);
-    margin-right: calc((100% - 1150px + 225px) /2);
+    margin-left: calc((100% - 1150px + 450px) /2);
+    margin-right: calc((100% - 1150px + 450px) /2);
   }
 }

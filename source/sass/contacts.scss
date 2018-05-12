@@ -137,6 +137,7 @@
     /* Google maps вставляет style='position: relative'. Не знаю, как иначе победить. */
     position: absolute !important;
     right: 0;
+    top: 0;
   }
 
   .contacts__map-static {

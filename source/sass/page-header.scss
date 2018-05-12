@@ -48,8 +48,7 @@
 
 @media (min-width: $screen-large) {
   .page-header {
-    padding-left: calc((100% - 1050px) /2);
-    padding-right: calc((100% - 1050px) /2);
+    width: 100%;
     position: relative;
   }
 
