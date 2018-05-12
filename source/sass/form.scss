@@ -172,10 +172,10 @@
   }
 
   .form__info-text {
-    margin-right: 225px;
+    margin-right: calc((100% - 1150px + 450px) / 2);
   }
 
   .form__button {
-    margin-left: 225px;
+    margin-left: calc((100% - 1150px + 450px) / 2);
   }
 }
