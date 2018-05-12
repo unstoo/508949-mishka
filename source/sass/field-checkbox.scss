@@ -41,6 +41,12 @@
   }
 }
 
+.field-checkbox input[type='checkbox']:focus + .field-checkbox__name {
+  &::before {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
 .field-checkbox input[type='checkbox']:checked + .field-checkbox__name {
   &::after {
     content: "";
@@ -56,9 +62,8 @@
 }
 
 .field-checkbox__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  height: 0;
+  width: 0;
 }
 
 @media (min-width: $screen-medium) {

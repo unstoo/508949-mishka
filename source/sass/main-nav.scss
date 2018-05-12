@@ -144,6 +144,9 @@
 
 
 @media (min-width: $screen-medium) {
+  .main-nav {
+    display: flex;
+  }
   .main-nav__toggle {
     display: none;
   }

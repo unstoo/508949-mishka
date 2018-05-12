@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 
   &--wrapper {
     &::before {
       content: "";
-      border-bottom: 1px solid $color-text--primary;
       flex-grow: 1;
+      display: block;
+      border-bottom: 1px solid $color-text--primary;
     }
   }
 }
@@ -20,8 +22,6 @@
   font-size: $font-size + 2px;
   line-height: $line-height - 6px;
   font-weight: bold;
-
-
 
   &--big {
     order: -1;

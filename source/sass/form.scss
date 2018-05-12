@@ -6,6 +6,9 @@
 
 .form__group {
   margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
   &--last {
     margin-bottom: 25px;
@@ -38,12 +41,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  flex-basis: 100%;
 
   &::after {
     content: "";
     width: 20px;
     height: 1px;
     border-bottom: 1px solid $color-text--primary;
+    display: block;
     flex-grow: 1;
   }
 }
@@ -53,6 +58,10 @@
   font-size: $font-size - 1px;
   line-height: $line-height - 8px;
   color: $color-darkgrey;
+}
+
+.form__input-group {
+  width: 100%;
 }
 
 @media (min-width: $screen-medium) {
@@ -107,6 +116,8 @@
   }
 
   .form__legend-wrapper {
+    flex-basis: auto;
+
     &::after {
       border: none;
       width: 0;
