@@ -86,7 +86,7 @@
               <div class="card-mini__info">Рост 30 см, вес 200 г</div>
               <div class="card-mini__group">
                 <div class="card-mini__price">1200 руб.</div>
-                <button class="card-mini__button" type="button">
+                <button class="card-mini__button" type="button" id="buy-button">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </button>
               </div>
@@ -115,7 +115,7 @@
               <div class="card-mini__info">Диаметр 15 см, высота 10 см</div>
               <div class="card-mini__group">
                 <div class="card-mini__price">690 руб.</div>
-                <button class="card-mini__button" type="button">
+                <button class="card-mini__button" type="button" id="buy-button">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </button>
               </div>
@@ -144,7 +144,7 @@
               <div class="card-mini__info">Диаметр 30см, высота 30см</div>
               <div class="card-mini__group">
                 <div class="card-mini__price">1500 руб.</div>
-                <button class="card-mini__button" type="button">
+                <button class="card-mini__button" type="button" id="buy-button">
                   <span class="visually-hidden">Добавить в корзину</span>
                 </button>
               </div>
@@ -231,25 +231,29 @@
       </div>
     </footer>
 
-    <form class="modal" action="https://echo.htmlacademy.ru" method="GET">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <span class="modal__lead-text">Выберите размер:</span>
-      <div class="selector">
-        <label class="selector__block">
-          <input class="selector__input" name="size" type="radio" value="S">
-          <span class="selector__name">S</span>
-        </label>
-        <label class="selector__block">
-          <input class="selector__input" name="size" type="radio" value="M">
-          <span class="selector__name">M</span>
-        </label>
-        <label class="selector__block">
-          <input class="selector__input" name="size" type="radio" value="L">
-          <span class="selector__name">L</span>
-        </label>
+    <form class="modal" action="https://echo.htmlacademy.ru" method="GET" id="modal">
+      <div class="modal__container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <span class="modal__lead-text">Выберите размер:</span>
+        <div class="selector">
+          <label class="selector__block">
+            <input class="selector__input" name="size" type="radio" value="S">
+            <span class="selector__name">S</span>
+          </label>
+          <label class="selector__block">
+            <input class="selector__input" name="size" type="radio" value="M">
+            <span class="selector__name">M</span>
+          </label>
+          <label class="selector__block">
+            <input class="selector__input" name="size" type="radio" value="L">
+            <span class="selector__name">L</span>
+          </label>
+        </div>
+        <button class="modal__button  button">Добавить</button>
       </div>
-      <button class="modal_button  button">Добавить</button>
+      <div class="modal__back-screen" id="back-screen"></div>
     </form>
 
+    <script src='js/ui.js'></script>
   </body>
 </html>

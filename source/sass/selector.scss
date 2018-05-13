@@ -5,16 +5,39 @@
 }
 
 .selector__input {
-  display: none;
+  display: none;          
+}
+
+.selector__input:checked + .selector__name {
+  border-color: $color-text--primary;
 }
 
 .selector__block {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #ececec;
-  width: 30%;
+  width: 31%;
   height: 52px;
+}
+
+.selector__name {
+  display: inline-flex;
+  width: 100%;
+  height: 52px;
+  padding-top: 10px;
+  justify-content: center;
+  border: 2px solid #ececec;
+  font-size: $font-size + 1px;
+  line-height: $line-height;
+  font-weight: bold;
+}
+
+.selector__block:active .selector__name {
+  border-color: $color-text--primary;
+}
+
+.selector__name:hover {
+  border-color: #c7c7c7;
 }
 
 @media (min-width: $screen-medium) {

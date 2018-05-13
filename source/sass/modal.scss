@@ -1,51 +1,87 @@
 .modal {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   
+  &--hidden {
+    display: none;
+  }
+}
+
+.modal__container {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 340px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 35px;
-  padding-bottom: 50px;
+  width: 320px;
+  padding: 30px;
+  margin: 30% auto;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25); 
+}
+
+.modal__back-screen {
+  position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .modal__title {
-  font-size: $font-size--h1;
+  font-size: $font-size--h1 - 2px;
   line-height: $line-height--h1;
-
-  
   margin: 0;
-  margin-top: 40px;
+  margin-bottom: 15px;
   width: 260px;
   padding-left: 55px;
   padding-right: 55px;
+  text-transform: uppercase;
 }
 
 .modal__lead-text {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-size: $font-size;
   line-height: $line-height + 6px;
 }
 
+.modal__button {
+  margin-top: 30px;
+  background-color: $color-bg-green;
+  border-color: $color-bg-green;
+  color: #ffffff;
+}
+
+.modal__button:hover {
+  background-color: $color-bg-darkgreen;
+  border-color: $color-bg-darkgreen;
+  color: #ffffff;
+}
+
 @media (min-width: $screen-medium) {
-  .modal {
+  .modal__container {
+    top: 30%;
     height: 336px;
     width: 566px;
     margin: 20px auto;
-    padding-top: 35px;
-    padding-bottom: 45px;
-
+    padding-top: 30px;
     border: 1px solid $color-border;
   }
 
   .modal__title {
     width: 100%;
     margin-top: 0;
-
     font-size: $font-size--large-h1 - 23px;
     line-height: $line-height--large-h1;
     text-transform: uppercase;
@@ -54,8 +90,6 @@
 
   .modal__lead-text {
     width: 100%;
-    margin-bottom: 0;
-
     font-size: $font-size--bigger;
     line-height: $line-height--bigger;
     text-align: center;
@@ -63,12 +97,8 @@
 
   .modal__button {
     width: 350px;
-    height : 55px;
+    height: 55px;
     margin: auto auto;
-    margin-bottom: 0;
-
-    border: none;
-    background-color: $color-bg-green;
-    color: #ffffff;
+    margin-bottom: 15px;
   }
 }
