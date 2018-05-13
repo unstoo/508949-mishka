@@ -74,7 +74,6 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("source/img"))
 });
 
-
 gulp.task("sprite-build", function() {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore({
@@ -83,7 +82,6 @@ gulp.task("sprite-build", function() {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
 });
-
 
 gulp.task("html-build", function() {
   return gulp.src("source/*.html")
