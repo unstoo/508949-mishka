@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.field-radio__input { 
+.field-radio__input {
   height: 0;
   width: 0;
 }
@@ -15,7 +15,7 @@
   }
 }
 
-.field-radio input[type=radio]:focus + .field-radio__name {
+.field-radio input[type="radio"]:focus + .field-radio__name {
   &::before {
     outline: 5px auto -webkit-focus-ring-color;
   }
@@ -29,9 +29,9 @@
   font-weight: bold;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -10px;
     height: 35px;
     width: 35px;
@@ -40,15 +40,15 @@
   }
 }
 
-.field-radio input[type='radio']:active + .field-radio__name {
+.field-radio input[type="radio"]:active + .field-radio__name {
   &::before {
     border: solid 2px #c7c7c7;
   }
 }
 
-.field-radio input[type='radio']:checked + .field-radio__name {
+.field-radio input[type="radio"]:checked + .field-radio__name {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 13px;
     top: 3px;
@@ -75,9 +75,9 @@
     }
   }
 
-  .field-radio input[type='radio']:checked + .field-radio__name {
+  .field-radio input[type="radio"]:checked + .field-radio__name {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 17px;
       top: 8px;

@@ -1,5 +1,5 @@
 .page-order {
-  width: 100%
+  width: 100%;
 }
 
 .page-order__title {
@@ -35,7 +35,7 @@
     margin-top: -88px;
     height: 240px;
     font-size: $font-size--medium-h1;
-    line-height:  $line-height--medium-h1;
+    line-height: $line-height--medium-h1;
     font-weight: bold;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -58,15 +58,15 @@
     min-height: 270px;
     padding-bottom: 40px;
     margin-bottom: 30px;
-    padding-left: calc((100% - 1050px) /2);
-    padding-right: calc((100% - 1050px) /2);
+    padding-left: calc((100% - 1050px) / 2);
+    padding-right: calc((100% - 1050px) / 2);
     font-size: $font-size--large-h1;
-    line-height:  $line-height--large-h1;
+    line-height: $line-height--large-h1;
   }
 
   .page-order__text-wrapper {
     margin: 0;
-    margin-left: calc((100% - 1150px + 450px) /2);
-    margin-right: calc((100% - 1150px + 450px) /2);
+    margin-left: calc((100% - 1150px + 450px) / 2);
+    margin-right: calc((100% - 1150px + 450px) / 2);
   }
 }

@@ -108,7 +108,7 @@
     padding: 0;
     padding-top: 30px;
     font-size: $font-size--large-h1 - 10px;
-    line-height:  $line-height--large-h1 - 6px;
+    line-height: $line-height--large-h1 - 6px;
     font-weight: bold;
   }
 
@@ -130,7 +130,12 @@
     margin-top: 30px;
     margin-right: 300px;
     margin-bottom: 20px;
+    font-size: $font-size--bigger;
+    line-height: $line-height--bigger;
+    font-weight: normal;
+    color: $color-darkgrey;
   }
+
   .featured-goods__details-wrapper {
     width: 290px;
     margin-right: 300px;
@@ -157,13 +162,6 @@
     width: 290px;
     margin-right: 300px;
   }
-
-  .featured-goods__text-wrapper {
-    font-size: $font-size--bigger;
-    line-height: $line-height--bigger;
-    font-weight: normal;
-    color: $color-darkgrey;
-  }
 }
 
 @media (min-width: $screen-large) {
@@ -175,8 +173,8 @@
     padding-bottom: 100px;
     margin: 0 50px;
     margin-bottom: 57px;
-    margin-left: calc((100% - 1050px) /2);
-    margin-right: calc((100% - 1050px) /2);
+    margin-left: calc((100% - 1050px) / 2);
+    margin-right: calc((100% - 1050px) / 2);
     border-image-slice: 85;
     border-image-width: 0 0 25px 0;
     border-image-repeat: repeat;
@@ -196,7 +194,7 @@
     order: 2;
     padding-top: 0;
     font-size: $font-size--large-h1;
-    line-height:  $line-height--large-h1;
+    line-height: $line-height--large-h1;
     margin-bottom: 25px;
   }
 

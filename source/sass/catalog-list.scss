@@ -36,13 +36,13 @@
     justify-content: space-between;
     margin-top: 110px;
     margin-bottom: 55px;
-    margin-left: calc((100% - 1050px) /2);
-    margin-right: calc((100% - 1050px) /2);
+    margin-left: calc((100% - 1050px) / 2);
+    margin-right: calc((100% - 1050px) / 2);
   }
-  
+
   .catalog-list__item {
     width: 317px;
-      margin: 0;
+    margin: 0;
 
     &--last {
       margin: 0;

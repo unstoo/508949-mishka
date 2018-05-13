@@ -71,7 +71,7 @@
     padding-right: 50px;
     margin-bottom: 20px;
     font-size: $font-size--medium-h1;
-    line-height:  $line-height--medium-h1;
+    line-height: $line-height--medium-h1;
 
     &::after {
       content: "";
@@ -101,12 +101,12 @@
   .contacts__label {
     width: 75px;
     font-size: $font-size--bigger;
-    line-height:  $line-height--bigger;
+    line-height: $line-height--bigger;
   }
 
   .contacts__info {
     font-size: $font-size--bigger;
-    line-height:  $line-height--bigger;
+    line-height: $line-height--bigger;
   }
 
   .contacts__map-interactive {
@@ -124,8 +124,8 @@
   .contacts {
     margin: 0 50px;
     margin-bottom: 105px;
-    margin-left: calc((100% - 1050px) /2);
-    margin-right: calc((100% - 1050px) /2);
+    margin-left: calc((100% - 1050px) / 2);
+    margin-right: calc((100% - 1050px) / 2);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@
   .contacts__map-interactive {
     width: 525px;
     height: 455px;
-    /* Google maps вставляет style='position: relative'. Не знаю, как иначе победить. */
+    /* Google maps вставляет style="position: relative". Не знаю, как иначе победить. */
     position: absolute !important;
     right: 0;
     top: 0;
