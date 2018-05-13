@@ -2,6 +2,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &--hidden {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    z-index: -1;
+  }
 }
 
 .main-nav__item {
@@ -106,6 +113,10 @@
   &:active {
     color: $color-link--down;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -114,7 +125,7 @@
   height: 21px;
   width: 21px;
   position: absolute;
-  top: 30px;
+  top: 26px;
   right: 30px;
   background: transparent;
   border: none;
@@ -135,7 +146,7 @@
     content: "";
     position: absolute;
     bottom: 6px;
-    left: -3px;
+    left: -5px;
     display: block;
     width: 29px;
     height: 3px;
@@ -144,6 +155,28 @@
   }
 }
 
+.main-nav__toggle--closed {
+  &::after {
+    width: 21px;
+    top: 12px;
+    left: auto;
+    right: 0;
+    transform: rotate(0deg);
+    border-top: black solid 2px;
+  }
+
+  &::before {
+    width: 21px;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 1px;
+    height: 14px;
+    transform: rotate(0deg);
+    border-bottom: black solid 2px;
+    border-top: black solid 2px;
+  }
+}
 
 @media (min-width: $screen-medium) {
   .main-nav {
@@ -159,6 +192,13 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+
+    &--hidden {
+      position: relative;
+      opacity: 1;
+      height: auto;
+      z-index: 1;
+    }
 
     &::before {
       content: "";
@@ -332,6 +372,7 @@
     }
 
     &--desktop {
+      display: inline;
       padding-top: 15px;
       font-size: $font-size;
     }

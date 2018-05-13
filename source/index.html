@@ -38,11 +38,10 @@
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button" id="menu-toggler">
             <span class="visually-hidden">Открыть Меню</span>
-            <span class="main-nav__hamuberger-icon"></span>
           </button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__list--hidden" id="main-nav">
             <li class="main-nav__item   main-nav__item--catalog">
               <a  class="main-nav__link" href="catalog.html">
                 Каталог товаров
@@ -299,5 +298,6 @@
       <button class="modal__button  button">Добавить</button>
     </form>
 
+  <script src='js/ui.js'></script>
   </body>
 </html>
