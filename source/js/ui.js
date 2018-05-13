@@ -1,147 +1,86 @@
-'use strict'
-console.log(Array.prototype.includes)
-/* IE11 poly */
-if (!Array.from) {
-    Array.from = (function () {
-      var toStr = Object.prototype.toString;
-      var isCallable = function (fn) {
-        return typeof fn === 'function' || toStr.call(fn) === '[object Function]';
-      };
-      var toInteger = function (value) {
-        var number = Number(value);
-        if (isNaN(number)) { return 0; }
-        if (number === 0 || !isFinite(number)) { return number; }
-        return (number > 0 ? 1 : -1) * Math.floor(Math.abs(number));
-      };
-      var maxSafeInteger = Math.pow(2, 53) - 1;
-      var toLength = function (value) {
-        var len = toInteger(value);
-        return Math.min(Math.max(len, 0), maxSafeInteger);
-      };
-  
-      // The length property of the from method is 1.
-      return function from(arrayLike/*, mapFn, thisArg */) {
-        // 1. Let C be the this value.
-        var C = this;
-  
-        // 2. Let items be ToObject(arrayLike).
-        var items = Object(arrayLike);
-  
-        // 3. ReturnIfAbrupt(items).
-        if (arrayLike == null) {
-          throw new TypeError("Array.from requires an array-like object - not null or undefined");
-        }
-  
-        // 4. If mapfn is undefined, then let mapping be false.
-        var mapFn = arguments.length > 1 ? arguments[1] : void undefined;
-        var T;
-        if (typeof mapFn !== 'undefined') {
-          // 5. else
-          // 5. a If IsCallable(mapfn) is false, throw a TypeError exception.
-          if (!isCallable(mapFn)) {
-            throw new TypeError('Array.from: when provided, the second argument must be a function');
-          }
-  
-          // 5. b. If thisArg was supplied, let T be thisArg; else let T be undefined.
-          if (arguments.length > 2) {
-            T = arguments[2];
-          }
-        }
-  
-        // 10. Let lenValue be Get(items, "length").
-        // 11. Let len be ToLength(lenValue).
-        var len = toLength(items.length);
-  
-        // 13. If IsConstructor(C) is true, then
-        // 13. a. Let A be the result of calling the [[Construct]] internal method of C with an argument list containing the single item len.
-        // 14. a. Else, Let A be ArrayCreate(len).
-        var A = isCallable(C) ? Object(new C(len)) : new Array(len);
-  
-        // 16. Let k be 0.
-        var k = 0;
-        // 17. Repeat, while k < len… (also steps a - h)
-        var kValue;
-        while (k < len) {
-          kValue = items[k];
-          if (mapFn) {
-            A[k] = typeof T === 'undefined' ? mapFn(kValue, k) : mapFn.call(T, kValue, k);
-          } else {
-            A[k] = kValue;
-          }
-          k += 1;
-        }
-        // 18. Let putStatus be Put(A, "length", len, true).
-        A.length = len;
-        // 20. Return A.
-        return A;
-      };
-    }());
-  }
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ })
+/************************************************************************/
+/******/ ({
 
-  /* IE1 Poly */
+/***/ "./index.js":
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-const MENU_CLASS_NAME = 'main-nav__list--hidden',
-    TOGGLER_CLASS_NAME = 'main-nav__toggle--closed',
-    MENU_ITEM_CLASS_NAME = 'main-nav__link--no-tabindex',
-    MODAL_CLASS_NAME = 'modal--hidden'
-
-const menuToggler = document.getElementById('menu-toggler'),
-    menu = document.getElementById('main-nav'),
-    menuItems = Array.from(document.getElementsByClassName('main-nav__link')),
-    modal = document.getElementById('modal'),
-    buyButtons = Array.from(document.querySelectorAll('#buy-button')),
-    modalBackScreen = document.getElementById('back-screen')
-
-
-if (modal) {
-    modal.classList.add(MODAL_CLASS_NAME)
-    modalBackScreen.addEventListener('click', toggleModal)
-}
-
-if (buyButtons.length !== 0) {
-    buyButtons.forEach(function (button) {
-        button.addEventListener('click', toggleModal)
-    })
-}
-
-if (window.innerWidth < 768) {
-    // Меню спрятано. Переключение по пунктам меню табом не нужно.
-    menuItems.forEach(function (item) { item.setAttribute('tabindex', '-1') })
-    initToggler()
-} else {
-    // Показать скрытое меню.
-    menu.classList.remove(MENU_CLASS_NAME)
-}   
-
-function initToggler() {
-    menuToggler.addEventListener('click', function () {
-
-        const classes = Array.from(menu.classList)
-        console.log('-----')
-        console.log(classes)
-
-        classes.includes(MENU_CLASS_NAME) ?
-        (function() {            
-            menu.classList.remove(MENU_CLASS_NAME)
-            menuToggler.classList.remove(TOGGLER_CLASS_NAME)
-            menuItems.forEach(function (item) { item.setAttribute('tabindex', '0') })
-        })()
-        : 
-        (function() {
-            menu.classList.add(MENU_CLASS_NAME)
-            menuToggler.classList.add(TOGGLER_CLASS_NAME)
-            menuItems.forEach(function (item) { item.setAttribute('tabindex', '-1') })
-        })()
-    })
-}
-
-function toggleModal(e) {
-    e.preventDefault()
-
-    const modalClasses = Array.from(modal.classList)
-    console.log('-----')
-    console.log(modalClasses)
-    modalClasses.includes(MODAL_CLASS_NAME) ?
-        modal.classList.remove(MODAL_CLASS_NAME) :
-        modal.classList.add(MODAL_CLASS_NAME)
-}
+    "use strict";
+    eval("\n\nvar MENU_CLASS_NAME = 'main-nav__list--hidden',\n    TOGGLER_CLASS_NAME = 'main-nav__toggle--closed',\n    MENU_ITEM_CLASS_NAME = 'main-nav__link--no-tabindex',\n    MODAL_CLASS_NAME = 'modal--hidden';\n\nvar menuToggler = document.getElementById('menu-toggler'),\n    menu = document.getElementById('main-nav'),\n    menuItems = Array.from(document.getElementsByClassName('main-nav__link')),\n    modal = document.getElementById('modal'),\n    buyButtons = Array.from(document.querySelectorAll('.buy-button')),\n    modalBackScreen = document.getElementById('back-screen');\n\nif (modal) {\n    modal.classList.add(MODAL_CLASS_NAME);\n    modalBackScreen.addEventListener('click', toggleModal);\n}\n\nif (buyButtons.length !== 0) {\n    buyButtons.forEach(function (button) {\n        button.addEventListener('click', toggleModal);\n    });\n}\n\nif (window.innerWidth < 768) {\n    // Меню спрятано. Переключение по пунктам меню табом не нужно.\n    menuItems.forEach(function (item) {\n        item.setAttribute('tabindex', '-1');\n    });\n    initToggler();\n} else {\n    // Показать скрытое меню.\n    menu.classList.remove(MENU_CLASS_NAME);\n}\n\nfunction initToggler() {\n    menuToggler.addEventListener('click', function () {\n\n        var classes = Array.from(menu.classList);\n\n        classes.includes(MENU_CLASS_NAME) ? function () {\n            menu.classList.remove(MENU_CLASS_NAME);\n            menuToggler.classList.remove(TOGGLER_CLASS_NAME);\n            menuItems.forEach(function (item) {\n                item.setAttribute('tabindex', '0');\n            });\n        }() : function () {\n            menu.classList.add(MENU_CLASS_NAME);\n            menuToggler.classList.add(TOGGLER_CLASS_NAME);\n            menuItems.forEach(function (item) {\n                item.setAttribute('tabindex', '-1');\n            });\n        }();\n    });\n}\n\nfunction toggleModal(e) {\n    e.preventDefault();\n\n    var modalClasses = Array.from(modal.classList);\n\n    modalClasses.includes(MODAL_CLASS_NAME) ? modal.classList.remove(MODAL_CLASS_NAME) : modal.classList.add(MODAL_CLASS_NAME);\n}\n\n//# sourceURL=webpack:///./index.js?");
+    
+    /***/ })
+    
+    /******/ });
